@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Egypt → Europe: Masters in Physiotherapy — Ireland, Italy, France & Belgium</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1eb;--surface:#fff;--surface2:#f9f7f3;--border:#e4dfd6;--border2:#cec8bd;
+  --text:#1a1815;--text2:#5a5650;--text3:#928e84;
+  --ie:#169b62;--ie-bg:#eaf6f0;--ie-border:#9fd8b8;--ie-dark:#0c6640;
+  --it:#009246;--it-bg:#e8f5ec;--it-border:#a8d8b5;--it-dark:#006830;
+  --fr:#002395;--fr-bg:#e8ecf8;--fr-border:#a5b3e8;--fr-dark:#001a6e;
+  --be:#9a7000;--be-bg:#fef7e6;--be-border:#d4b87a;--be-dark:#6a4c00;
+  --green:#1d6b46;--green-bg:#eaf4ee;--green-border:#a0ccb2;
+  --amber:#7a4a0a;--amber-bg:#fef3e2;--amber-border:#e8c278;
+  --red:#8a1f1f;--red-bg:#fdeaea;--red-border:#f0a0a0;
+  --blue:#1a4a88;--blue-bg:#e8f0fb;--blue-border:#a0b8df;
+  --purple:#4a2e88;--purple-bg:#f0ecfc;--purple-border:#b8a8e8;
+  --radius:10px;--radius-sm:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+
+.hero{background:var(--text);color:#f4f1eb;padding:3.5rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(244,241,235,.05)}
+.hero::before{top:-80px;right:-80px;width:340px;height:340px}
+.hero::after{bottom:-60px;left:-40px;width:240px;height:240px}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.hero-kicker{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(244,241,235,.45);margin-bottom:1rem}
+.hero h1{font-family:'Lora',serif;font-size:clamp(1.9rem,4.5vw,2.9rem);line-height:1.15;margin-bottom:.75rem}
+.hero h1 em{font-style:italic;color:#d4a574}
+.hero-sub{font-size:14.5px;color:rgba(244,241,235,.6);max-width:580px;line-height:1.7;margin-bottom:1.5rem}
+.hero-flags{display:flex;gap:10px;flex-wrap:wrap}
+.hero-flag{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(244,241,235,.55);padding:5px 12px;border:1px solid rgba(244,241,235,.14);border-radius:20px}
+.hero-flag span{font-size:19px}
+
+.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(244,241,235,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{max-width:900px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex-shrink:0;font-size:13px;font-weight:500;color:var(--text2);padding:13px 14px;text-decoration:none;border-bottom:2px solid transparent;transition:.15s;white-space:nowrap}
+.nav a:hover{color:var(--text);border-color:var(--border2)}
+.nav a.active{color:#b8360a;border-color:#b8360a}
+
+.main{max-width:900px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+section{margin-bottom:3.5rem}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem}
+.sec-title{font-family:'Lora',serif;font-size:1.6rem;line-height:1.25;margin-bottom:.5rem}
+.sec-desc{font-size:14px;color:var(--text2);max-width:640px;margin-bottom:1.75rem;line-height:1.7}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem}
+.card+.card{margin-top:.75rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+@media(max-width:640px){.grid-2,.grid-4{grid-template-columns:1fr}}
+@media(max-width:800px) and (min-width:641px){.grid-4{grid-template-columns:1fr 1fr}}
+
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.03em}
+.bg-green{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.bg-amber{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border)}
+.bg-red{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
+.bg-blue{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-border)}
+.bg-ie{background:var(--ie-bg);color:var(--ie-dark);border:1px solid var(--ie-border)}
+.bg-it{background:var(--it-bg);color:var(--it-dark);border:1px solid var(--it-border)}
+.bg-fr{background:var(--fr-bg);color:var(--fr-dark);border:1px solid var(--fr-border)}
+.bg-be{background:var(--be-bg);color:var(--be-dark);border:1px solid var(--be-border)}
+
+.note{font-size:13px;border-radius:var(--radius-sm);padding:10px 14px;line-height:1.6;margin-top:.75rem}
+.n-green{background:var(--green-bg);color:var(--green);border-left:3px solid var(--green)}
+.n-amber{background:var(--amber-bg);color:var(--amber);border-left:3px solid var(--amber-border)}
+.n-red{background:var(--red-bg);color:var(--red);border-left:3px solid var(--red-border)}
+.n-blue{background:var(--blue-bg);color:var(--blue);border-left:3px solid var(--blue-border)}
+.n-ie{background:var(--ie-bg);color:var(--ie-dark);border-left:3px solid var(--ie)}
+.n-it{background:var(--it-bg);color:var(--it-dark);border-left:3px solid var(--it)}
+.n-fr{background:var(--fr-bg);color:var(--fr-dark);border-left:3px solid var(--fr)}
+.n-be{background:var(--be-bg);color:var(--be-dark);border-left:3px solid var(--be-border)}
+
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:.9rem}
+.step-line{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:28px}
+.snum{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.sn-ie{background:var(--ie-bg);color:var(--ie-dark);border:1px solid var(--ie-border)}
+.sn-it{background:var(--it-bg);color:var(--it-dark);border:1px solid var(--it-border)}
+.sn-fr{background:var(--fr-bg);color:var(--fr-dark);border:1px solid var(--fr-border)}
+.sn-be{background:var(--be-bg);color:var(--be-dark);border:1px solid var(--be-border)}
+.sn-gray{background:var(--surface2);color:var(--text2);border:1px solid var(--border)}
+.sc{width:1px;background:var(--border);flex:1;min-height:14px;margin:3px 0}
+.sbody{flex:1;padding-bottom:1.3rem}
+.stitle{font-size:14px;font-weight:600;margin-bottom:3px;padding-top:4px}
+.sdesc{font-size:13px;color:var(--text2);line-height:1.65}
+
+.tt{width:100%;border-collapse:collapse;font-size:13px}
+.tt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);padding:7px 10px;border-bottom:1px solid var(--border2)}
+.tt td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5}
+.tt tr:last-child td{border-bottom:none}
+.tt td:first-child{color:var(--text2)}
+.row-w td{background:var(--amber-bg);color:var(--amber)}
+.row-r td{background:var(--red-bg);color:var(--red)}
+
+.e-sec{margin-bottom:1.5rem}
+.e-head{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
+.e-row{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;padding:.55rem 0;border-bottom:1px solid var(--border);font-size:13px}
+.e-row:last-child{border-bottom:none}
+.e-name{flex:1;line-height:1.5;color:var(--text)}
+.e-sub{font-size:11px;color:var(--text3);margin-top:1px}
+.e-val{font-weight:700;font-size:13px;white-space:nowrap;text-align:right;min-width:85px}
+.totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1rem}
+@media(max-width:480px){.totals{grid-template-columns:1fr}}
+.tot-card{border-radius:var(--radius-sm);padding:1rem 1.25rem;color:#f4f1eb}
+.tot-min{background:var(--text2)}.tot-max{background:var(--text)}
+.tot-label{font-size:12px;font-weight:600;opacity:.65;margin-bottom:3px}
+.tot-sub{font-size:11px;opacity:.45;margin-bottom:5px}
+.tot-num{font-family:'Lora',serif;font-size:1.4rem}
+
+.ctry-header{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem}
+.ctry-flag{font-size:2rem}
+.ctry-name{font-family:'Lora',serif;font-size:1.4rem}
+.ctry-sub{font-size:13px;color:var(--text2)}
+.phase-pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:.75rem}
+.divider{height:1px;background:var(--border);margin:1.5rem 0}
+.comp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.comp-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:640px}
+.comp-table th{padding:9px 10px;font-weight:600;font-size:11px;text-align:left;border-bottom:2px solid var(--border);text-transform:uppercase;letter-spacing:.05em;color:var(--text3)}
+.comp-table td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:middle;line-height:1.5}
+.comp-table tr:last-child td{border-bottom:none}
+.h-ie{background:var(--ie-bg);color:var(--ie-dark)}
+.h-it{background:var(--it-bg);color:var(--it-dark)}
+.h-fr{background:var(--fr-bg);color:var(--fr-dark)}
+.h-be{background:var(--be-bg);color:var(--be-dark)}
+.tl-wrap{display:flex;flex-direction:column}
+.tl-row{display:flex;gap:.75rem}
+.tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:12px}
+.tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.tl-line{width:1px;background:var(--border);flex:1;min-height:8px;margin:2px 0}
+.tl-body{flex:1;padding-bottom:.9rem}
+.tl-when{font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.tl-what{font-size:13px;line-height:1.6;color:var(--text2)}
+.tl-what strong{color:var(--text);font-weight:600}
+.pro-list{list-style:none;margin-top:.5rem}
+.pro-list li{font-size:12px;color:var(--text2);line-height:1.5;padding:2px 0;display:flex;gap:6px}
+.c-g{color:var(--green)}.c-r{color:var(--red)}.c-a{color:var(--amber)}
+footer{background:var(--text);color:rgba(244,241,235,.4);font-size:12px;text-align:center;padding:2rem 1.5rem;line-height:1.8}
+footer a{color:rgba(244,241,235,.6)}
+@media print{.nav-wrap{display:none}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">Egypt → Europe · Physiotherapy master's guide</div>
+    <h1>Study a Master's in Europe — <em>then practise</em></h1>
+    <p class="hero-sub">A complete guide to master's programmes in physiotherapy (and related fields), student visas from Egypt, financial requirements, costs, and the pathway from graduation to full professional practice in Ireland, Italy, France, and Belgium.</p>
+    <div class="hero-flags">
+      <div class="hero-flag"><span>🇮🇪</span> Ireland</div>
+      <div class="hero-flag"><span>🇮🇹</span> Italy</div>
+      <div class="hero-flag"><span>🇫🇷</span> France</div>
+      <div class="hero-flag"><span>🇧🇪</span> Belgium</div>
+      <div class="hero-flag"><span>🎓</span> Study → Practise</div>
+      <div class="hero-flag">Updated June 2026</div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="#strategy">Strategy</a>
+    <a href="#comparison">Compare</a>
+    <a href="#ireland">Ireland</a>
+    <a href="#italy">Italy</a>
+    <a href="#france">France</a>
+    <a href="#belgium">Belgium</a>
+    <a href="#egypt-docs">Egypt docs</a>
+    <a href="#scholarships">Scholarships</a>
+    <a href="#costs-summary">All costs</a>
+    <a href="#timeline">Timeline</a>
+  </nav>
+</div>
+
+<div class="main">
+
+<!-- ═══════════════ STRATEGY ═══════════════ -->
+<section id="strategy">
+  <div class="sec-label">Why a master's?</div>
+  <h2 class="sec-title">The study route — advantages, trade-offs & key insight</h2>
+  <p class="sec-desc">Choosing to do a master's degree in a European country before practising is a longer and more expensive path than applying for direct recognition — but it can be the smartest move for the right person.</p>
+
+  <div class="grid-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--green)">✅ When the master's route makes sense</div>
+      <ul class="pro-list">
+        <li><span class="c-g">✓</span> CORU/TSRM-PSTRP/DREETS required a Period of Adaptation or partial exemption that needs physical presence anyway — a master's gives you a legal visa to be there</li>
+        <li><span class="c-g">✓</span> You want a specialisation (MSK, neuro, sports, paediatrics) that adds salary and career value</li>
+        <li><span class="c-g">✓</span> You want to bypass the multi-year direct recognition queue in Italy or France's 2% quota barrier</li>
+        <li><span class="c-g">✓</span> You plan to stay long-term and want full EU-level credentials</li>
+        <li><span class="c-g">✓</span> You don't yet speak the local language — a 2-year master's gives you time to learn it properly</li>
+        <li><span class="c-g">✓</span> Scholarships can offset costs significantly (especially in Belgium and Ireland)</li>
+        <li><span class="c-g">✓</span> Post-study work rights (12–24 months) give a legal runway to find a job without an employer lined up</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--red)">⚠️ When direct recognition is better</div>
+      <ul class="pro-list">
+        <li><span class="c-r">✗</span> You already have solid clinical experience and your Egyptian degree closely matches Irish/Belgian standards — direct recognition may be faster and cheaper</li>
+        <li><span class="c-r">✗</span> You have a family and cannot spend 1–2 years studying abroad on a tight student income</li>
+        <li><span class="c-r">✗</span> The total cost (€30,000–80,000 over 2 years) is not feasible without scholarship support</li>
+        <li><span class="c-r">✗</span> You want to start earning physiotherapy income as quickly as possible</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note n-blue">💡 <strong>The critical insight for CORU (Ireland):</strong> If you pursue an Irish CORU-approved pre-registration MSc Physiotherapy (e.g. at UCD or UCC), you graduate as a first-time registrant — you skip the international recognition process entirely. You apply directly to CORU for registration as a new graduate, just like an Irish-trained physio. This is the cleanest, most reliable path to practising in Ireland. However, these programmes are competitive entry (require a science background, NOT for existing physios), so check eligibility carefully. Existing physiotherapists are NOT eligible for pre-registration programmes — their route is the international recognition process OR a postgraduate specialist MSc.</div>
+
+  <div class="note n-amber" style="margin-top:.75rem">⚠️ <strong>Two very different types of master's exist:</strong> (1) <strong>Pre-registration MSc Physiotherapy</strong> — for people who do NOT already have a physio degree; leads to CORU/national registration as a first-time graduate. (2) <strong>Postgraduate specialist MSc</strong> — for existing qualified physiotherapists; deepens expertise in MSK, sports, neuro, etc., but does NOT replace the recognition process; the Egyptian bachelor's degree is still the qualification assessed for registration. This guide covers both, but highlights which is which for each country.</div>
+</section>
+
+<!-- ═══════════════ COMPARISON ═══════════════ -->
+<section id="comparison">
+  <div class="sec-label">At a glance</div>
+  <h2 class="sec-title">How the four countries compare for masters study</h2>
+  <p class="sec-desc">Key variables: tuition cost, language of instruction, visa difficulty, post-study work rights, and how studying there helps your path to practising.</p>
+
+  <div class="card">
+    <div class="comp-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th class="h-ie">🇮🇪 Ireland</th>
+            <th class="h-it">🇮🇹 Italy</th>
+            <th class="h-fr">🇫🇷 France</th>
+            <th class="h-be">🇧🇪 Belgium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>English-taught programmes?</td><td><span class="badge bg-green">Yes — fully</span></td><td><span class="badge bg-amber">Some — English or Italian</span></td><td><span class="badge bg-red">Mostly French</span></td><td><span class="badge bg-green">Many English options</span></td></tr>
+          <tr><td>Tuition (non-EU, per year)</td><td>€17,000–26,000</td><td>€1,000–5,000 (public)</td><td>€2,895–4,000 (public)</td><td>€4,000–12,000</td></tr>
+          <tr><td>Living costs/year</td><td>€12,000–18,000</td><td>€9,000–14,000</td><td>€9,000–15,000</td><td>€12,000–15,000</td></tr>
+          <tr><td>Student financial proof needed</td><td>€10,000 accessible</td><td>~€6,000–8,000/yr (shown via sponsorship letter)</td><td>€615/month (no blocked account for Egypt)</td><td>€1,062/month (2026–27) = ~€12,744/yr</td></tr>
+          <tr><td>Blocked account required?</td><td><span class="badge bg-amber">No — accessible funds</span></td><td><span class="badge bg-amber">No — sponsor letter accepted</span></td><td><span class="badge bg-green">No — for Egypt</span></td><td><span class="badge bg-red">Yes or equivalent</span></td></tr>
+          <tr><td>Visa application (Egyptian)</td><td>Student D visa via VFS</td><td>Type D student visa via VFS Cairo + Dichiarazione di Valore</td><td>Long-stay VLS-TS étudiant via TLScontact + Campus France procedure</td><td>Type D long-stay via Belgian embassy</td></tr>
+          <tr><td>Student work rights</td><td>20h/wk term; 40h/wk holiday</td><td>20h/wk (max 1,040h/yr)</td><td>Limited — 60% of full-time (964h/yr)</td><td>20h/wk term; unlimited holidays</td></tr>
+          <tr><td>Post-study stay (masters)</td><td><span class="badge bg-green">24 months — Stamp 1G</span></td><td><span class="badge bg-amber">12 months — Permesso attesa occupazione</span></td><td><span class="badge bg-amber">12 months — RÉCE permit</span></td><td><span class="badge bg-amber">12 months — orientation year</span></td></tr>
+          <tr><td>Does degree help with registration?</td><td><span class="badge bg-green">Yes — skip recognition if CORU-approved pre-reg MSc</span></td><td><span class="badge bg-amber">Somewhat — still need DGPROF recognition of Egyptian bachelor's</span></td><td><span class="badge bg-green">Yes — French degree enables autorisation d'exercice</span></td><td><span class="badge bg-green">Yes — Belgian degree helps NARIC equivalence chain</span></td></tr>
+          <tr><td>Language requirement to practise</td><td><span class="badge bg-green">None — English</span></td><td><span class="badge bg-red">Italian B2+ exam required</span></td><td><span class="badge bg-red">French B2+ required</span></td><td><span class="badge bg-red">Dutch or French B2+ required</span></td></tr>
+          <tr><td>Scholarship availability</td><td>Government of Ireland scholarship (€10k + full fees)</td><td>DSU regional scholarships; low fees already</td><td>Eiffel Excellence; Campus France grants</td><td>VLIR-UOS; Master Mind; Science@Leuven</td></tr>
+          <tr><td>Overall recommendation</td><td><span class="badge bg-green">Best for English-speakers; expensive but cleanest path</span></td><td><span class="badge bg-amber">Very affordable; language is barrier</span></td><td><span class="badge bg-amber">Accessible; recognition still needed for non-EU physio</span></td><td><span class="badge bg-green">Strong research environment; high financial threshold</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ IRELAND ═══════════════ -->
+<section id="ireland">
+  <div class="ctry-header">
+    <div class="ctry-flag">🇮🇪</div>
+    <div><div class="ctry-name">Ireland</div><div class="ctry-sub">Best English-language option; expensive but the cleanest registration path</div></div>
+  </div>
+
+  <!-- PROGRAMME TYPES -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--ie-dark)">Types of master's programmes available</div>
+    <div class="grid-2" style="margin-bottom:0">
+      <div style="border:1.5px solid var(--ie);border-radius:var(--radius);padding:1rem">
+        <div style="font-size:13px;font-weight:700;color:var(--ie-dark);margin-bottom:.5rem">Type A — Pre-registration MSc Physiotherapy</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:.5rem">For people WITHOUT a physio degree (e.g. science graduates who want to change career). NOT open to existing physiotherapists. Leads directly to CORU registration as a new graduate — no recognition process needed.</div>
+        <div style="font-size:12px;font-weight:600;color:var(--ie-dark)">Key programmes:</div>
+        <ul style="font-size:12px;color:var(--text2);padding-left:1rem;margin-top:.25rem;line-height:1.6">
+          <li>UCD — Professional Master of Physiotherapy (2 years, NFQ Level 9) — requires prior science degree, NOT for existing physios</li>
+          <li>UCC — MSc Physiotherapy (2 years)</li>
+          <li>University of Limerick — MSc Physiotherapy (2 years)</li>
+        </ul>
+        <div class="note n-red" style="margin-top:.5rem;font-size:11px">❌ Not suitable for an Egyptian physio graduate — requires non-physio science background</div>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+        <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:.5rem">Type B — Postgraduate Specialist MSc</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.65;margin-bottom:.5rem">For qualified physiotherapists. Deepens expertise in a speciality. Does NOT replace CORU recognition of the Egyptian bachelor's — but studying in Ireland gives legal presence to complete any required Period of Adaptation and builds a strong CV for Irish employers.</div>
+        <div style="font-size:12px;font-weight:600;color:var(--text)">Key programmes:</div>
+        <ul style="font-size:12px;color:var(--text2);padding-left:1rem;margin-top:.25rem;line-height:1.6">
+          <li>UCD — MSc in Musculoskeletal & Sports Physiotherapy</li>
+          <li>RCSI — MSc in Health Sciences (Physiotherapy)</li>
+          <li>TU Dublin — various postgrad physiotherapy/health programmes</li>
+          <li>UCC — MSc Physiotherapy (clinical specialisms)</li>
+        </ul>
+        <div class="note n-ie" style="margin-top:.5rem;font-size:11px">✓ Suitable for Egyptian physio graduates. Run CORU recognition process IN PARALLEL during studies</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDENT VISA - IRELAND -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--ie-dark)">🛂 Student visa — Ireland (from Egypt)</div>
+    <div class="steps">
+      <div class="step"><div class="step-line"><div class="snum sn-ie">1</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Get an unconditional offer from an Irish university</div>
+        <div class="sdesc">Apply via the university's international office. Non-EU deadline is typically December–February for September intake. You need an upper second class honours degree (2.1) or equivalent. Confirm the programme is on the ILEP (Interim List of Eligible Programmes) — mandatory for the student visa.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-ie">2</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Prepare financial evidence — €10,000 accessible</div>
+        <div class="sdesc">Show immediate access to €10,000 for the first year (in addition to proof of tuition payment). This must be in a bank account that can be accessed in Ireland — not locked in a fixed-term deposit. Acceptable: personal bank statements, parental sponsor letter + their bank statements, scholarship letter. Ireland does not require a blocked account — funds just need to be demonstrably accessible.</div>
+        <div class="note n-amber">⚠ Ireland tightened checks on large last-minute deposits in 2025–2026. Do not transfer a large sum just before applying — maintain a consistent balance and be ready to explain the source of funds.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-ie">3</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Apply for student visa (D study visa) via VFS Global Egypt</div>
+        <div class="sdesc">All Egyptian nationals require a student visa. Apply at the Irish visa application centre (VFS Global, Cairo). Key documents: offer letter from Irish university, proof of tuition payment or scholarship, €10,000 financial evidence, passport, 2 passport photos, private health insurance, accommodation evidence. Visa fee: €60 (long-stay). Apply up to 3 months before the course start. Processing: 4–8 weeks.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-ie">4</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Arrive and register with GNIB — within 90 days</div>
+        <div class="sdesc">Register with immigration (GNIB/IRP) to get your Stamp 2 student permission and IRP card. Fee: €300. Register at Burgh Quay in Dublin or at your local Garda station outside Dublin. You can work 20 hours/week during term and 40 hours/week during official holidays (June, July, August, and mid-December to mid-January).</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-ie">5</div></div>
+        <div class="sbody"><div class="stitle">Run CORU recognition in parallel (for Type B MSc students)</div>
+        <div class="sdesc">While studying in Ireland, submit your CORU recognition application for your Egyptian bachelor's degree. Being physically in Ireland makes document submission easier, allows you to respond quickly to CORU requests, and — if a Period of Adaptation is required — you can complete it during your studies without any separate visa.</div></div></div>
+    </div>
+  </div>
+
+  <!-- POST-STUDY - IRELAND -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--ie-dark)">🎓 After graduation — Stamp 1G (24 months)</div>
+    <div class="sdesc" style="margin-bottom:.75rem">After completing a Level 9 master's in Ireland, you are entitled to the <strong>Third Level Graduate Programme (Stamp 1G)</strong> — 24 months to find work and stay in Ireland, with full 40-hour/week work rights and no employer sponsorship required at application stage.</div>
+    <table class="tt">
+      <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Duration</td><td>24 months for master's (Level 9) — 12 months for bachelor's (Level 8)</td></tr>
+        <tr><td>Work rights</td><td>Any job, up to 40 hours/week — no employment permit needed during this period</td></tr>
+        <tr><td>Application timing</td><td>Apply after receiving final results; your Stamp 2 must still be valid when processed</td></tr>
+        <tr><td>Application fee</td><td>€300 (IRP registration renewal)</td></tr>
+        <tr><td>Where to apply</td><td>Online ISD portal (Dublin, Meath, Kildare, Wicklow, Cork, Limerick) or Garda station elsewhere</td></tr>
+        <tr><td>Employer sponsorship needed?</td><td>No — you can apply without a job offer</td></tr>
+        <tr><td>Can you practise as a physio during Stamp 1G?</td><td>Only if CORU registration is already complete. Stamp 1G gives work rights but not professional registration. You need both.</td></tr>
+        <tr><td>Next step after Stamp 1G</td><td>Transition to Critical Skills Employment Permit (CSEP) — physiotherapy is on the Critical Skills list, salary ≥ €40,904/yr</td></tr>
+        <tr class="row-w"><td>Important warning</td><td>Time on Stamp 1G does NOT count toward Irish citizenship. You must move to CSEP → Stamp 4 to build the residency clock.</td></tr>
+      </tbody>
+    </table>
+    <div class="note n-ie" style="margin-top:.75rem">✓ <strong>The ideal Ireland sequence:</strong> Student visa → MSc (2 years, run CORU in parallel) → Stamp 1G (24 months) → get CORU registration + job offer → Critical Skills Employment Permit → Stamp 4 after 2 years → permanent residency pathway. Total from Egypt to Stamp 4 eligibility: approximately 5–6 years.</div>
+  </div>
+
+  <!-- IRELAND COSTS -->
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem;color:var(--ie-dark)">Ireland — full cost breakdown (2-year master's)</div>
+    <div class="e-sec">
+      <div class="e-head">📄 Pre-departure (Egypt)</div>
+      <div class="e-row"><div class="e-name">University application fees<div class="e-sub">Varies per university; typically €30–80 per application</div></div><div class="e-val">€60–160</div></div>
+      <div class="e-row"><div class="e-name">Document legalisation (consular chain for Egyptian docs)<div class="e-sub">Degree + transcripts + police clearance → notary → MFA → Irish consulate</div></div><div class="e-val">€200–400</div></div>
+      <div class="e-row"><div class="e-name">Student visa fee (D study)</div><div class="e-val">€60</div></div>
+      <div class="e-row"><div class="e-name">VFS Global service fee</div><div class="e-val">€25–40</div></div>
+      <div class="e-row"><div class="e-name">IELTS / English language test<div class="e-sub">Most Irish universities require IELTS 6.5–7.0 or equivalent</div></div><div class="e-val">~€250</div></div>
+      <div class="e-row"><div class="e-name">Flight Cairo → Dublin (one-way)</div><div class="e-val">€300–700</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🎓 Tuition fees (2 years, non-EU international rate)</div>
+      <div class="e-row"><div class="e-name">UCD Professional MSc Physiotherapy<div class="e-sub">2-year programme; check ucd.ie for current non-EU rate</div></div><div class="e-val">~€25,800–26,000/yr</div></div>
+      <div class="e-row"><div class="e-name">UCC MSc Physiotherapy<div class="e-sub">International non-EU rate; confirm annually</div></div><div class="e-val">~€17,000–20,000/yr</div></div>
+      <div class="e-row"><div class="e-name">University of Limerick MSc<div class="e-sub">Check ul.ie for current international fees</div></div><div class="e-val">~€16,000–22,000/yr</div></div>
+      <div class="e-row"><div class="e-name">Student contribution charge (all Irish unis)<div class="e-sub">Charged in addition to tuition each year</div></div><div class="e-val">~€3,000/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🏠 Living costs (Dublin / Cork / Limerick, per year)</div>
+      <div class="e-row"><div class="e-name">Rent — shared house or student accommodation<div class="e-sub">Dublin: €800–1,200/month. Cork/Limerick: €600–900/month.</div></div><div class="e-val">€7,200–14,400/yr</div></div>
+      <div class="e-row"><div class="e-name">Groceries + utilities + transport</div><div class="e-val">~€4,000–6,000/yr</div></div>
+      <div class="e-row"><div class="e-name">Private health insurance (mandatory for visa)<div class="e-sub">VHI, Laya, Irish Life — student plans available</div></div><div class="e-val">€400–700/yr</div></div>
+      <div class="e-row"><div class="e-name">Books, materials, miscellaneous</div><div class="e-val">€500–1,000/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🛂 On arrival + ongoing admin</div>
+      <div class="e-row"><div class="e-name">IRP card registration (Stamp 2)</div><div class="e-val">€300/yr</div></div>
+      <div class="e-row"><div class="e-name">CORU recognition fee (parallel application)</div><div class="e-val">€410</div></div>
+      <div class="e-row"><div class="e-name">Stamp 1G application (after graduation)</div><div class="e-val">€300</div></div>
+    </div>
+    <div class="totals">
+      <div class="tot-card tot-min"><div class="tot-label">Total — 2 years study (UCC/UL, Cork/Limerick)</div><div class="tot-sub">Tuition + living + admin, before working</div><div class="tot-num">~€55,000–70,000</div></div>
+      <div class="tot-card tot-max"><div class="tot-label">Total — 2 years study (UCD, Dublin)</div><div class="tot-sub">Tuition + living + admin, before working</div><div class="tot-num">~€75,000–100,000</div></div>
+    </div>
+    <div class="note n-amber" style="margin-top:.75rem">⚠ These costs can be substantially reduced by: (1) Government of Ireland International Scholarship — covers full fees + €10,000 stipend for 1 year; (2) working part-time during term (20h/wk, 40h/wk holidays) — at Irish minimum wage (~€14.15/hr) you can earn €12,000–18,000/yr part-time; (3) choosing Cork or Limerick over Dublin (saves ~€3,000–5,000/yr in rent).</div>
+  </div>
+</section>
+
+<!-- ═══════════════ ITALY ═══════════════ -->
+<section id="italy">
+  <div class="ctry-header">
+    <div class="ctry-flag">🇮🇹</div>
+    <div><div class="ctry-name">Italy</div><div class="ctry-sub">Most affordable tuition in Western Europe — but Italian language is a hard requirement to practise</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--it-dark)">Key programmes (Laurea Magistrale in Fisioterapia / Scienze Riabilitative)</div>
+    <table class="tt">
+      <thead><tr><th>University</th><th>Programme</th><th>Language</th><th>Non-EU fee/yr</th></tr></thead>
+      <tbody>
+        <tr><td>Università degli Studi di Roma La Sapienza</td><td>LM Scienze delle Professioni Sanitarie della Riabilitazione</td><td>Italian</td><td>€1,000–2,500</td></tr>
+        <tr><td>Università degli Studi di Milano</td><td>LM Fisioterapia</td><td>Italian</td><td>€1,000–3,000</td></tr>
+        <tr><td>Università di Bologna</td><td>LM Scienze Riabilitative</td><td>Italian</td><td>€1,500–3,500</td></tr>
+        <tr><td>Università di Torino</td><td>LM Fisioterapia</td><td>Italian</td><td>€1,000–2,500</td></tr>
+        <tr><td>Humanitas University (private)</td><td>MSc Physiotherapy (English-taught)</td><td>English</td><td>€8,000–15,000</td></tr>
+        <tr><td>Various private universities</td><td>Various specialist MSc programmes</td><td>English/Italian</td><td>€5,000–20,000</td></tr>
+      </tbody>
+    </table>
+    <div class="note n-amber" style="margin-top:.5rem">⚠ Most Italian public university physiotherapy master's are taught <strong>in Italian</strong>. You will need a minimum of B2 Italian (typically C1 recommended) to follow lectures and clinical placements. A small number of private universities offer English-medium programmes at significantly higher cost. The Italian language is also required to practise, so learning it is unavoidable regardless.</div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--it-dark)">🛂 Student visa — Italy (from Egypt)</div>
+    <div class="steps">
+      <div class="step"><div class="step-line"><div class="snum sn-it">1</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Pre-enrolment on Universitaly + Dichiarazione di Valore</div>
+        <div class="sdesc">Register on universitaly.it and submit pre-enrolment requests (typically April–July for following academic year). You also need a <em>Dichiarazione di Valore</em> (Declaration of Value) — a document from the Italian consulate in Cairo that validates your Egyptian degree within the Italian academic system. Request the DoV well in advance (can take 2–3 months). All Egyptian documents must go through the full consular legalisation chain first (Egyptian MFA → Italian consulate Cairo).</div>
+        <div class="note n-amber" style="font-size:12px">⚠ From January 2025, Italy requires in-person fingerprinting at the consulate for Type D visa applicants — book early as slots fill up.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-it">2</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Apply for Type D student visa via VFS Global Cairo</div>
+        <div class="sdesc">Documents required: Universitaly pre-enrolment confirmation, Dichiarazione di Valore, university acceptance letter, passport, passport photos, financial proof (sponsorship letter from parents + bank statements, or scholarship letter), accommodation evidence, Italian language certificate (if required by programme). Visa fee: ~€50–116. Processing: up to 90 days — apply early.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-it">3</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Arrive and apply for Permesso di Soggiorno per Studio — within 8 days</div>
+        <div class="sdesc">Within 8 days of arrival, submit the Permesso di Soggiorno application kit at a designated Poste Italiane office. Fee: ~€30 for the kit + €40–50 for the card. You can work 20 hours/week (max 1,040 hours/year) while studying. Register your address at the local Comune (Anagrafe) and apply for your Codice Fiscale (tax code) at the Agenzia delle Entrate — both are free and needed for many services.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-it">4</div></div>
+        <div class="sbody"><div class="stitle">Run DGPROF recognition in parallel (for your Egyptian bachelor's)</div>
+        <div class="sdesc">Being in Italy makes you physically present to respond to Ministry requests, attend any required tests, and enrol with the TSRM-PSTRP Order once the decree is issued. The Italian language course you take for your master's also prepares you for the mandatory language exam required before Order enrolment.</div></div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--it-dark)">🎓 After graduation — Permesso per Attesa Occupazione (12 months)</div>
+    <div class="sdesc" style="margin-bottom:.75rem">After completing your Laurea Magistrale in Italy, you can apply for the <strong>Permesso di Soggiorno per Attesa Occupazione</strong> — a 12-month job-seeking permit (not renewable) that allows you to stay and work while searching for employment.</div>
+    <table class="tt">
+      <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Duration</td><td>12 months maximum — not renewable</td></tr>
+        <tr><td>Work rights</td><td>Can work full-time or part-time; internships also permitted (up to 12 months)</td></tr>
+        <tr><td>Application</td><td>Apply at the local Questura (immigration police) before your student permit expires. Based on Article 39(5) of Legislative Decree 286/1998. University must be recognised by MIUR (Italian Ministry of University and Research).</td></tr>
+        <tr><td>Conversion</td><td>If you find a job, convert this to a Permesso di Lavoro Subordinato (work permit). Then apply for annual renewal as long as employed.</td></tr>
+        <tr class="row-w"><td>Critical constraint</td><td>This permit cannot be renewed. If you do not find work within 12 months, you must leave Italy. Processing is via the Questura — expect delays and bureaucracy.</td></tr>
+        <tr><td>Can you practise as a physio?</td><td>Only if DGPROF recognition decree + language exam + TSRM-PSTRP Order enrolment are ALL complete. The job-seeking permit gives you legal stay but not professional registration.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem;color:var(--it-dark)">Italy — full cost breakdown (2-year master's)</div>
+    <div class="e-sec">
+      <div class="e-head">📄 Pre-departure (Egypt)</div>
+      <div class="e-row"><div class="e-name">Document legalisation + Dichiarazione di Valore<div class="e-sub">Full chain; DoV takes 2–3 months to process at Italian consulate Cairo</div></div><div class="e-val">€200–500</div></div>
+      <div class="e-row"><div class="e-name">Italian language course (B2 minimum, C1 recommended)<div class="e-sub">Alliance Française/Italian Cultural Institute Cairo; online courses</div></div><div class="e-val">€300–1,500</div></div>
+      <div class="e-row"><div class="e-name">Italian language certificate (CELI/CILS/PLIDA)</div><div class="e-val">€150–250</div></div>
+      <div class="e-row"><div class="e-name">Type D student visa fee</div><div class="e-val">€50–116</div></div>
+      <div class="e-row"><div class="e-name">VFS Global / consulate service fees</div><div class="e-val">€25–40</div></div>
+      <div class="e-row"><div class="e-name">Flight Cairo → Rome/Milan/Turin (one-way)</div><div class="e-val">€200–500</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🎓 Tuition (2 years, non-EU, public university)</div>
+      <div class="e-row"><div class="e-name">Public university tuition (income-based for non-EU)<div class="e-sub">Varies; may qualify for reduced fees via ISEE certificate if family income is assessed</div></div><div class="e-val">€1,000–5,000/yr</div></div>
+      <div class="e-row"><div class="e-name">DSU regional scholarship (if awarded — covers fees + stipend)</div><div class="e-val">Offset: up to -€8,000/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🏠 Living costs (per year, Italy)</div>
+      <div class="e-row"><div class="e-name">Rent — student accommodation or shared flat<div class="e-sub">Milan/Rome: €600–900/mo. Other cities: €350–600/mo.</div></div><div class="e-val">€4,200–10,800/yr</div></div>
+      <div class="e-row"><div class="e-name">Groceries + utilities + transport</div><div class="e-val">~€3,500–5,000/yr</div></div>
+      <div class="e-row"><div class="e-name">Health insurance (SSN registration for students)<div class="e-sub">Non-EU students can register for Servizio Sanitario Nazionale — very low cost</div></div><div class="e-val">~€150–300/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🛂 On arrival + admin</div>
+      <div class="e-row"><div class="e-name">Permesso di Soggiorno (study) kit + card</div><div class="e-val">~€70–80</div></div>
+      <div class="e-row"><div class="e-name">DGPROF recognition application (bollo fiscale + postage)</div><div class="e-val">€50–100</div></div>
+      <div class="e-row"><div class="e-name">TSRM-PSTRP Order annual enrolment (after recognition)</div><div class="e-val">€150–200/yr</div></div>
+    </div>
+    <div class="totals">
+      <div class="tot-card tot-min"><div class="tot-label">Total — 2 years (mid-size city, public uni)</div><div class="tot-sub">Tuition + living + admin, before working</div><div class="tot-num">~€20,000–35,000</div></div>
+      <div class="tot-card tot-max"><div class="tot-label">Total — 2 years (Milan/Rome, private uni)</div><div class="tot-sub">Tuition + living + admin, before working</div><div class="tot-num">~€35,000–60,000</div></div>
+    </div>
+    <div class="note n-green" style="margin-top:.75rem">✓ <strong>Italy's biggest advantage:</strong> Public university tuition is among the lowest in Europe (€1,000–5,000/yr vs €17,000–26,000/yr in Ireland). DSU (Diritto allo Studio Universitario) regional scholarships can cover both tuition AND a monthly living stipend of ~€300–450/month. International students are eligible. Apply as soon as you arrive — typically in October–November each year via the regional DSU office.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ FRANCE ═══════════════ -->
+<section id="france">
+  <div class="ctry-header">
+    <div class="ctry-flag">🇫🇷</div>
+    <div><div class="ctry-name">France</div><div class="ctry-sub">Affordable public university fees — studying a French physiotherapy master's is the most direct route to the autorisation d'exercice for non-EU applicants</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--fr-dark)">Key programmes (Master Mention Sciences de la Réhabilitation / STAPS / Santé)</div>
+    <table class="tt">
+      <thead><tr><th>University</th><th>Programme</th><th>Language</th><th>Non-EU fee/yr</th></tr></thead>
+      <tbody>
+        <tr><td>Université Paris-Saclay</td><td>Master Réhabilitation, Vieillissement, Activité Physique et Santé</td><td>French</td><td>€2,895</td></tr>
+        <tr><td>Université de Lyon (Claude Bernard Lyon 1)</td><td>Master STAPS — Activité Physique Thérapeutique et Réadaptation</td><td>French</td><td>€2,895</td></tr>
+        <tr><td>Université Aix-Marseille</td><td>Master Sciences de la Réhabilitation</td><td>French</td><td>€2,895</td></tr>
+        <tr><td>Université de Montpellier</td><td>Master STAPS — Ingénierie et Ergonomie (Health focus)</td><td>French</td><td>€2,895</td></tr>
+        <tr><td>Paris Descartes / Université Paris Cité</td><td>Master Sciences de la Santé — Physiothérapie</td><td>French</td><td>€2,895</td></tr>
+        <tr><td>Various grandes écoles / private schools</td><td>MSc Health Sciences / Physiotherapy (English)</td><td>English</td><td>€8,000–25,000</td></tr>
+      </tbody>
+    </table>
+    <div class="note n-fr" style="margin-top:.5rem">ℹ️ In France, the non-EU rate at public universities is fixed at €2,895/year for master's programmes — the same for all non-EU nationalities. Private grandes écoles and specialised health schools charge much more but may offer English instruction. The French state diploma (Diplôme d'État de Masseur-Kinésithérapeute) is obtained through the Institut de Formation en Masso-Kinésithérapie (IFMK) — a separate track from a university master's. If your goal is full recognition as a kinésithérapeute in France, the IFMK route (with the partial exemption for non-EU holders) leads most directly to it, but the 2% cap applies.</div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--fr-dark)">🛂 Student visa — France (from Egypt)</div>
+    <div class="steps">
+      <div class="step"><div class="step-line"><div class="snum sn-fr">1</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Campus France "Études en France" procedure (mandatory for Egypt)</div>
+        <div class="sdesc">Egypt IS among countries where the Campus France procedure is mandatory. Create an account on the Études en France platform, upload your academic documents, pay the Campus France fee (~€40–60), and attend an interview at the Campus France office in Cairo if required. You receive a confirmation code used in your visa application. Start this 3–6 months before your planned start date.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-fr">2</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Get accepted by a French university</div>
+        <div class="sdesc">Apply directly to university via the institution's portal (Parcoursup for some, direct application for postgraduate). For physiotherapy IFMK partial exemption, apply to the specific IFMK in your target region. All applications require French language proficiency proof: minimum DELF B2 for most programmes (C1 recommended for clinical/health programmes).</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-fr">3</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Apply for long-stay student visa (VLS-TS Étudiant) via TLScontact</div>
+        <div class="sdesc">Apply at the TLScontact centre (Cairo) for a VLS-TS Étudiant (long-stay visa worth a residence permit). Documents: Campus France confirmation, university acceptance, passport, financial proof (€615/month — no blocked account required for Egypt), accommodation proof, health insurance evidence, photos. Visa fee: ~€99. Apply 2–3 months before course start. Processing: 3–8 weeks. Egyptian nationals do NOT need to prove English proficiency for the visa itself.</div>
+        <div class="note n-green" style="font-size:12px">✓ Good news for Egypt: no blocked account required and no English language test required. The main financial proof is €615/month accessible — a bank statement or parental sponsorship letter suffices.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-fr">4</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Arrive and validate VLS-TS on ANEF portal — within 3 months</div>
+        <div class="sdesc">Validate your VLS-TS within 3 months of arriving in France via the ANEF portal (Administration Numérique pour les Étrangers en France). Pay the validation tax: €60 for students. This converts your visa into a residence title. Register with CPAM (health insurance) — students under 28 can register for free French student social security. Register your address at the mairie.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-fr">5</div></div>
+        <div class="sbody"><div class="stitle">Run DREETS authorisation d'exercice process in parallel</div>
+        <div class="sdesc">Once in France, contact the regional DREETS where you will study and work. Being resident in France with a valid address + projet d'exercice (project to work in that region) substantially strengthens your application. If studying and completing clinical placements in France, your French placements count toward the 1,500-hour experience requirement.</div></div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--fr-dark)">🎓 After graduation — RÉCE permit / APS (12 months)</div>
+    <div class="sdesc" style="margin-bottom:.75rem">After completing a recognised master's degree from a French institution, you can apply for the <strong>Carte de Séjour — Recherche d'emploi ou Création d'entreprise (RÉCE)</strong>, previously called APS. This gives 12 months to find work in France.</div>
+    <table class="tt">
+      <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Duration</td><td>12 months — not renewable</td></tr>
+        <tr><td>Eligibility</td><td>Must have obtained a recognised master's degree (grade de master) from a French state-recognised institution; must hold a valid student permit at time of application</td></tr>
+        <tr><td>Work rights</td><td>Can work without restriction during this period (no separate work permit needed)</td></tr>
+        <tr><td>Application</td><td>Apply online via ANEF portal before your student residence permit expires</td></tr>
+        <tr><td>Key benefit when transitioning to work</td><td>When you get a qualifying job offer, the employer is EXEMPT from the labour market test (no need to prove no French/EU candidate was available), provided salary ≥ 1.5x SMIC and job is in your field of study</td></tr>
+        <tr><td>APS (bilateral agreement route)</td><td>Egypt has not signed a specific bilateral migration agreement with France, so Egyptian graduates generally use the standard RÉCE route — not the APS. Confirm with the prefecture.</td></tr>
+        <tr class="row-w"><td>Practising as a physio</td><td>RÉCE gives legal stay and work rights — but you still need the autorisation d'exercice from DREETS + Ordre registration to practise as a physiotherapist. These must be in place separately.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem;color:var(--fr-dark)">France — full cost breakdown (2-year master's)</div>
+    <div class="e-sec">
+      <div class="e-head">📄 Pre-departure (Egypt)</div>
+      <div class="e-row"><div class="e-name">Document legalisation (French consular chain)<div class="e-sub">French consulate in Cairo + MFA stamp</div></div><div class="e-val">€200–400</div></div>
+      <div class="e-row"><div class="e-name">French language course (DELF B2/C1)<div class="e-sub">Alliance Française Cairo + exam fee</div></div><div class="e-val">€400–1,500</div></div>
+      <div class="e-row"><div class="e-name">Campus France procedure fee</div><div class="e-val">€40–60</div></div>
+      <div class="e-row"><div class="e-name">VLS-TS student visa fee</div><div class="e-val">€99</div></div>
+      <div class="e-row"><div class="e-name">TLScontact service fee</div><div class="e-val">€25–40</div></div>
+      <div class="e-row"><div class="e-name">Flight Cairo → Paris/Lyon/Marseille</div><div class="e-val">€200–500</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🎓 Tuition (2 years, public university, non-EU rate)</div>
+      <div class="e-row"><div class="e-name">Public university master's — fixed non-EU rate 2025–26<div class="e-sub">Same across all French public universities</div></div><div class="e-val">€2,895/yr</div></div>
+      <div class="e-row"><div class="e-name">CVEC (student campus contribution)</div><div class="e-val">~€105/yr</div></div>
+      <div class="e-row"><div class="e-name">IFMK partial exemption programme (if applicable)</div><div class="e-val">€280–400/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🏠 Living costs (per year)</div>
+      <div class="e-row"><div class="e-name">Rent — Paris vs provinces<div class="e-sub">Paris studio: €900–1,600/mo. Lyon/Marseille: €600–1,000/mo. Smaller cities: €400–700/mo.</div></div><div class="e-val">€4,800–19,200/yr</div></div>
+      <div class="e-row"><div class="e-name">Groceries + transport + utilities</div><div class="e-val">~€4,000–6,000/yr</div></div>
+      <div class="e-row"><div class="e-name">CAF housing benefit (if eligible — reduces rent €100–400/mo)</div><div class="e-val">Offset: up to -€4,800/yr</div></div>
+      <div class="e-row"><div class="e-name">Mutuelle (health insurance supplement under 28 → free CPAM)</div><div class="e-val">€0–80/mo</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🛂 On arrival + admin</div>
+      <div class="e-row"><div class="e-name">ANEF VLS-TS validation tax</div><div class="e-val">€60</div></div>
+      <div class="e-row"><div class="e-name">RÉCE permit application (after graduation)</div><div class="e-val">€225 (titre de séjour fee)</div></div>
+      <div class="e-row"><div class="e-name">Ordre des Masseurs-Kinésithérapeutes annual membership (once authorised)</div><div class="e-val">€75–150/yr</div></div>
+    </div>
+    <div class="totals">
+      <div class="tot-card tot-min"><div class="tot-label">Total — 2 years (provincial city, public uni)</div><div class="tot-sub">Before working, with CAF benefits</div><div class="tot-num">~€20,000–35,000</div></div>
+      <div class="tot-card tot-max"><div class="tot-label">Total — 2 years (Paris, public uni)</div><div class="tot-sub">Before working, Paris prices</div><div class="tot-num">~€38,000–55,000</div></div>
+    </div>
+    <div class="note n-fr" style="margin-top:.75rem">ℹ️ <strong>The CAF (housing benefit) is a major factor in France.</strong> If you rent privately in France (not university dorms), you can apply for the Aide Personnalisée au Logement (APL) through the Caisse d'Allocations Familiales. International students are generally eligible. Benefit ranges from €100 to €400/month depending on your rent and income. Apply within 1 month of signing your rental contract at caf.fr.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ BELGIUM ═══════════════ -->
+<section id="belgium">
+  <div class="ctry-header">
+    <div class="ctry-flag">🇧🇪</div>
+    <div><div class="ctry-name">Belgium</div><div class="ctry-sub">World-class research universities; KU Leuven is particularly strong in rehabilitation sciences</div></div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--be-dark)">Key programmes</div>
+    <table class="tt">
+      <thead><tr><th>University</th><th>Programme</th><th>Language</th><th>Non-EU fee/yr</th></tr></thead>
+      <tbody>
+        <tr><td>KU Leuven</td><td>Master of Rehabilitation Sciences and Physiotherapy (2 years)</td><td>Dutch / some English tracks</td><td>€4,040–8,000 (non-EU)</td></tr>
+        <tr><td>Ghent University (UGent)</td><td>Master in Rehabilitation Sciences and Physiotherapy</td><td>Dutch</td><td>€4,000–6,000</td></tr>
+        <tr><td>Vrije Universiteit Brussel (VUB)</td><td>Master in Rehabilitation Sciences and Physiotherapy</td><td>Dutch / English modules</td><td>€4,500–7,000</td></tr>
+        <tr><td>UCLouvain (Louvain-la-Neuve)</td><td>Master en Sciences de la Rééducation</td><td>French</td><td>€4,000–8,000</td></tr>
+        <tr><td>ULiège</td><td>Master en Sciences de la Motricité (Physiothérapie)</td><td>French</td><td>€4,000–6,000</td></tr>
+        <tr><td>UAntwerp</td><td>Master of Rehabilitation Sciences (specialisations)</td><td>Dutch/English</td><td>€4,500–7,000</td></tr>
+      </tbody>
+    </table>
+    <div class="note n-be" style="margin-top:.5rem">ℹ️ Belgian universities have some English-taught modules in master's programmes but the language of instruction for most physiotherapy/rehabilitation programmes is Dutch (Flanders) or French (Wallonia/Brussels). KU Leuven offers some English-language options. Crucially: you will need to practise in the same linguistic region where you study, making language acquisition unavoidable.</div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--be-dark)">🛂 Student visa — Belgium (from Egypt)</div>
+    <div class="steps">
+      <div class="step"><div class="step-line"><div class="snum sn-be">1</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Get unconditional admission from a Belgian university</div>
+        <div class="sdesc">Apply directly via the university. Non-EU deadline is typically February–March for September intake. Belgian universities typically require proof of language proficiency: Dutch B2 for Flemish universities (NT2 Staatsexamen), French B2 for Wallonia/Brussels. KU Leuven non-EU deadline is usually January. Check your target university's specific requirements.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-be">2</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Prove financial means — €1,062/month (2026–27 requirement)</div>
+        <div class="sdesc">Belgium has significantly increased its financial threshold for non-EU students for 2026–27: €1,062/month, meaning approximately <strong>€12,744 for a full year</strong> must be demonstrated. Options: (1) Sponsor (parent/guardian) letter + their bank statements showing sufficient funds; (2) Blocked account via Studely or Ready Study Go International — transfer equivalent to 12 months × €1,062 = €12,744 into a blocked account in your name; (3) Employment contract covering the required amount; (4) Scholarship letter from a recognised body.</div>
+        <div class="note n-red" style="font-size:12px">⚠ The 2026–27 Belgian requirement (€1,062/month) is the highest of the four countries and applies for each year of study. Plan accordingly.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-be">3</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Apply for Type D long-stay student visa at Belgian embassy</div>
+        <div class="sdesc">Apply at the Belgian embassy or consulate serving Egypt. Documents: unconditional admission letter, proof of financial means, police clearance (criminal record certificate), medical certificate (for applicants over 21), passport photos, passport. Visa fee: €210 for long-stay. Processing: several weeks to 3+ months — apply early. All documents in languages other than Dutch, French, German, or English must be translated by a sworn translator.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-be">4</div><div class="sc"></div></div>
+        <div class="sbody"><div class="stitle">Arrive and register at commune — within 8 working days</div>
+        <div class="sdesc">Register at your local commune's Aliens Department. Receive an A-card (residence permit). Renew annually — Belgian immigration assesses study progress each year (must earn 60 credits/year for master's students; failure to progress can result in permit refusal). Register with a ziekenfonds/mutuelle for health insurance. Open a Belgian bank account. You can work 20 hours/week during term and unlimited hours during holidays.</div></div></div>
+      <div class="step"><div class="step-line"><div class="snum sn-be">5</div></div>
+        <div class="sbody"><div class="stitle">Begin NARIC + Departement Zorg / FWB recognition during studies</div>
+        <div class="sdesc">Apply for NARIC academic equivalence for your Egyptian bachelor's. Belgian universities and recognition bodies are familiar with international applicants. Clinical placements during your Belgian master's provide documented experience in Belgium, which significantly strengthens your recognition application. The recognition process and the master's can run in parallel.</div></div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--be-dark)">🎓 After graduation — Orientation Year (12 months)</div>
+    <table class="tt">
+      <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Duration</td><td>12 months — not renewable</td></tr>
+        <tr><td>Eligibility</td><td>Must have graduated from a recognised Belgian institution; must have a valid student A-card; apply at your commune (town hall) at least 15 days before your A-card expires</td></tr>
+        <tr><td>Work rights</td><td>Full access to the Belgian labour market — any job</td></tr>
+        <tr><td>Financial proof still required</td><td>Must demonstrate financial solvency (options: sponsor, blocked account equivalent to 12 × €835 for 2025–26, or employment contract)</td></tr>
+        <tr><td>Transition to work permit</td><td>Once you have a job offer, your employer applies for a Single Permit. With a Belgian master's, your professional experience and recognised Belgian qualification make the recognition chain for physiotherapy practice significantly shorter.</td></tr>
+        <tr class="row-w"><td>Salary threshold challenge</td><td>The highly-qualified Single Permit minimum (€48,912–53,220) still applies. A Belgian master's improves your chances of qualifying for this threshold or for the standard Single Permit route. Discuss with your employer before accepting a role.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem;color:var(--be-dark)">Belgium — full cost breakdown (2-year master's)</div>
+    <div class="e-sec">
+      <div class="e-head">📄 Pre-departure (Egypt)</div>
+      <div class="e-row"><div class="e-name">Document legalisation (Belgian consular chain)<div class="e-sub">Egypt → MFA → Belgian embassy. Same chain as Italy/France.</div></div><div class="e-val">€200–400</div></div>
+      <div class="e-row"><div class="e-name">Dutch or French language course + NT2/DELF exam<div class="e-sub">Starting from zero: budget 18 months of lessons before you're at B2</div></div><div class="e-val">€500–2,000</div></div>
+      <div class="e-row"><div class="e-name">Type D visa fee (Belgian embassy)</div><div class="e-val">€210</div></div>
+      <div class="e-row"><div class="e-name">Blocked account (Studely/Ready Study Go) — first year<div class="e-sub">€12,744 locked up, but returned to you after arrival</div></div><div class="e-val">€12,744 + ~€80 fee</div></div>
+      <div class="e-row"><div class="e-name">Flight Cairo → Brussels/Leuven/Liège</div><div class="e-val">€200–500</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🎓 Tuition (2 years, non-EU)</div>
+      <div class="e-row"><div class="e-name">KU Leuven / UGent / VUB / UCLouvain / ULiège non-EU rate<div class="e-sub">Varies by programme and university — use the KU Leuven fee calculator (kuleuven.be)</div></div><div class="e-val">€4,000–8,000/yr</div></div>
+      <div class="e-row"><div class="e-name">VLIR-UOS or Master Mind scholarship (if awarded)<div class="e-sub">Can cover full tuition + living stipend of €800–1,100/month</div></div><div class="e-val">Offset: full fees</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🏠 Living costs (per year)</div>
+      <div class="e-row"><div class="e-name">Rent — Leuven, Ghent, Brussels<div class="e-sub">Leuven studio: €500–800/mo. Brussels: €800–1,200/mo. Ghent: €550–850/mo.</div></div><div class="e-val">€6,000–14,400/yr</div></div>
+      <div class="e-row"><div class="e-name">Groceries + transport + utilities<div class="e-sub">Transport heavily subsidised for students in Belgium</div></div><div class="e-val">~€4,000–6,000/yr</div></div>
+      <div class="e-row"><div class="e-name">Ziekenfonds / mutuelle contribution</div><div class="e-val">~€120–240/yr</div></div>
+    </div>
+    <div class="e-sec">
+      <div class="e-head">🛂 On arrival + admin</div>
+      <div class="e-row"><div class="e-name">Commune registration (A-card)</div><div class="e-val">€20–50</div></div>
+      <div class="e-row"><div class="e-name">NARIC equivalence fee (Flanders)</div><div class="e-val">€90</div></div>
+      <div class="e-row"><div class="e-name">Orientation year application (after graduation)</div><div class="e-val">€180 (permit fee)</div></div>
+    </div>
+    <div class="totals">
+      <div class="tot-card tot-min"><div class="tot-label">Total — 2 years (Leuven/Ghent/Liège, with scholarship)</div><div class="tot-sub">Living costs only if full scholarship</div><div class="tot-num">~€25,000–35,000</div></div>
+      <div class="tot-card tot-max"><div class="tot-label">Total — 2 years (Brussels, no scholarship)</div><div class="tot-sub">Full fees + living costs</div><div class="tot-num">~€40,000–60,000</div></div>
+    </div>
+    <div class="note n-be" style="margin-top:.75rem">ℹ️ <strong>Belgium's blocked account note:</strong> The €12,744 required per year is NOT lost money — it is your own money held temporarily in a blocked account and released to you monthly or upon arrival. The cost is only the account setup fee (~€80) plus having that capital tied up for several months. However, you must have access to this sum, which is a real barrier for many applicants.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ EGYPT DOCS ═══════════════ -->
+<section id="egypt-docs">
+  <div class="sec-label">Common to all countries</div>
+  <h2 class="sec-title">Documents to prepare from Egypt — student application</h2>
+
+  <div class="card">
+    <table class="tt">
+      <thead><tr><th>Document</th><th>Purpose</th><th>Where / How</th><th>Time needed</th><th>Est. cost</th></tr></thead>
+      <tbody>
+        <tr><td>Passport (valid 6 months+ beyond studies)</td><td>All visas</td><td>Ensure at least 2 blank pages. Renew if needed at Egyptian Passports Office.</td><td>2–4 weeks if renewing</td><td>€20–40 notarised copy</td></tr>
+        <tr><td>Bachelor's degree (legalised)</td><td>University admission + recognition</td><td>Egyptian notary → MFA → target country's embassy in Cairo</td><td>6–10 weeks</td><td>€80–180</td></tr>
+        <tr><td>Official academic transcripts</td><td>Admission + recognition</td><td>University registrar; request in English. Legalise same chain.</td><td>4–8 weeks</td><td>€50–100</td></tr>
+        <tr><td>Detailed course syllabus</td><td>Recognition process (CORU/DGPROF/DREETS)</td><td>University academic department. Start requesting immediately — takes weeks.</td><td>4–8 weeks</td><td>€30–60</td></tr>
+        <tr><td>Police clearance (criminal record)</td><td>Belgium (over 21) + Italy + France</td><td>Egyptian Ministry of Interior; then legalise. Allow 3–4 weeks.</td><td>3–5 weeks</td><td>€30–80</td></tr>
+        <tr><td>Medical certificate</td><td>Belgium (if required by embassy)</td><td>Licensed physician in Egypt; certified by Ministry of Health if required.</td><td>1–2 weeks</td><td>€30–80</td></tr>
+        <tr><td>Motivation letter (personal statement)</td><td>University admission (all countries)</td><td>Written by you; explains your background, goals, and why this programme. May need certified translation.</td><td>Self-prepared</td><td>Translation: €30–80</td></tr>
+        <tr><td>Academic reference letters (2)</td><td>University admission (all countries)</td><td>From professors or clinical supervisors. May need certified translation for non-English-medium countries.</td><td>2–4 weeks</td><td>Translation: €40–100</td></tr>
+        <tr><td>Language certificate</td><td>Admission + visa (except Ireland)</td><td>Italy: CELI/CILS/PLIDA. France: DELF B2+. Belgium-NL: NT2. Belgium-FR: DELF. Tested in Egypt at Cultural Institutes.</td><td>Months of study + exam</td><td>€100–300 exam; €300–2,000 course</td></tr>
+        <tr><td>IELTS / English language test</td><td>Ireland + some English-taught programmes in Belgium</td><td>British Council Cairo or IDP Egypt. IELTS Academic required (6.5–7.0 typically).</td><td>4–6 weeks from registration</td><td>~€250</td></tr>
+        <tr><td>Certified translations</td><td>Italy (Italian), France (French), Belgium (Dutch or French)</td><td>Sworn translator certified by the target country's consulate in Egypt or by a tribunal in the target country. NOT Google Translate.</td><td>2–3 weeks per batch</td><td>€10–25/page</td></tr>
+        <tr><td>Sponsor financial documents</td><td>Financial proof for all visas</td><td>If parents are sponsoring: their bank statements (6 months), employment proof, sponsor declaration letter — all certified/translated as required.</td><td>2–3 weeks</td><td>€50–150 to certify</td></tr>
+      </tbody>
+    </table>
+    <div class="note n-amber" style="margin-top:.75rem">⚠ <strong>Egypt is NOT a member of the Hague Apostille Convention.</strong> All official Egyptian documents (degree, transcripts, police clearance) must go through: Egyptian Notary Public → Egyptian Ministry of Foreign Affairs authentication stamp → target country's consulate/embassy in Cairo legalisation. This chain costs €80–200 per document and takes 6–10 weeks. Start this process as soon as you have your degree — it is the longest part of the student application and cannot be rushed.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ SCHOLARSHIPS ═══════════════ -->
+<section id="scholarships">
+  <div class="sec-label">Funding your studies</div>
+  <h2 class="sec-title">Scholarships & funding options</h2>
+
+  <div class="grid-2" style="margin-bottom:.75rem">
+    <div class="card">
+      <div style="font-size:13px;font-weight:700;margin-bottom:.75rem;color:var(--ie-dark)">🇮🇪 Ireland scholarships</div>
+      <table class="tt">
+        <tbody>
+          <tr><td style="font-weight:600">Government of Ireland International Education Scholarship</td><td>Full fee waiver + €10,000 living stipend for 1 year; master's or PhD level; highly competitive; apply via educationireland.ie</td></tr>
+          <tr><td style="font-weight:600">UCD Global Scholarship</td><td>Partial to full tuition waiver; apply via UCD Global website</td></tr>
+          <tr><td style="font-weight:600">University of Limerick International Merit Scholarship</td><td>Partial tuition reduction for high-achieving international students</td></tr>
+          <tr><td style="font-weight:600">Part-time work (20h/wk)</td><td>At €14.15/hr minimum — ~€12,000–15,000/yr part-time — significant supplement</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div style="font-size:13px;font-weight:700;margin-bottom:.75rem;color:var(--it-dark)">🇮🇹 Italy scholarships</div>
+      <table class="tt">
+        <tbody>
+          <tr><td style="font-weight:600">DSU Regional Scholarship (Diritto allo Studio Universitario)</td><td>Income-based; covers tuition + monthly stipend (~€300–450/month); international students eligible; apply in Oct–Nov at regional DSU office. Very accessible — apply every year.</td></tr>
+          <tr><td style="font-weight:600">Italian Government Scholarship (borse di studio MAE-DGSP)</td><td>Covers tuition + monthly allowance; apply via Italian Cultural Institute Cairo or universitaly.it; for specific nationalities</td></tr>
+          <tr><td style="font-weight:600">University-specific scholarships</td><td>Bologna, Milan, Rome, Turin all offer merit grants for non-EU students; check individual university websites</td></tr>
+          <tr><td style="font-weight:600">Part-time work (20h/wk)</td><td>At Italian minimum: ~€800–1,000/month part-time</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div style="font-size:13px;font-weight:700;margin-bottom:.75rem;color:var(--fr-dark)">🇫🇷 France scholarships</div>
+      <table class="tt">
+        <tbody>
+          <tr><td style="font-weight:600">Bourse d'Excellence Eiffel (Campus France)</td><td>Highly competitive; covers living allowance (~€1,181/month for master's), transport, health coverage; apply via campus france 2–3 months before start; for Egyptian students</td></tr>
+          <tr><td style="font-weight:600">Erasmus+ (if applicable)</td><td>If studying via a partnership programme; check with your Egyptian university's international office</td></tr>
+          <tr><td style="font-weight:600">CAF housing benefit</td><td>Not a scholarship but €100–400/month off rent; apply within 1 month of arriving</td></tr>
+          <tr><td style="font-weight:600">University grants and CROUS social aid</td><td>Social scholarships based on financial situation; apply each year at CROUS</td></tr>
+          <tr><td style="font-weight:600">Part-time work (60% = 964h/yr)</td><td>At French minimum wage ~€11.88/hr net; earn ~€9,000–11,000/yr part-time</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div style="font-size:13px;font-weight:700;margin-bottom:.75rem;color:var(--be-dark)">🇧🇪 Belgium scholarships</div>
+      <table class="tt">
+        <tbody>
+          <tr><td style="font-weight:600">VLIR-UOS Scholarship</td><td>Full scholarship (tuition + living stipend ~€900–1,100/month) for students from developing countries including Egypt; extremely competitive; apply 1 year in advance via vlir.be</td></tr>
+          <tr><td style="font-weight:600">Flanders Master Mind Scholarship</td><td>For top-ranking international students at Flemish universities; €8,000–10,000; apply via mastermindflan ders.be</td></tr>
+          <tr><td style="font-weight:600">Science@Leuven Scholarship (KU Leuven)</td><td>Partial tuition waiver + living allowance; for high-achieving non-EU students at KU Leuven</td></tr>
+          <tr><td style="font-weight:600">Part-time work (20h/wk term)</td><td>At Belgian minimum wage ~€13.60/hr; earn ~€10,000–13,000/yr part-time</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ COSTS SUMMARY ═══════════════ -->
+<section id="costs-summary">
+  <div class="sec-label">Financial planning</div>
+  <h2 class="sec-title">Total cost comparison — 2-year master's (study + living + post-study year)</h2>
+
+  <div class="card">
+    <div class="comp-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Cost component</th>
+            <th class="h-ie">🇮🇪 Ireland</th>
+            <th class="h-it">🇮🇹 Italy</th>
+            <th class="h-fr">🇫🇷 France</th>
+            <th class="h-be">🇧🇪 Belgium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tuition — 2 years (non-EU public)</td><td>€34,000–52,000</td><td>€2,000–10,000</td><td>€5,800–6,000</td><td>€8,000–16,000</td></tr>
+          <tr><td>Living costs — 2 years</td><td>€24,000–36,000</td><td>€18,000–28,000</td><td>€18,000–35,000</td><td>€24,000–34,000</td></tr>
+          <tr><td>Pre-departure costs (docs, visa, flight, language course)</td><td>€900–1,700</td><td>€1,500–3,500</td><td>€1,500–3,000</td><td>€1,500–3,500</td></tr>
+          <tr><td>On-arrival admin (IRP/permesso/A-card, etc.)</td><td>€600–700</td><td>€300–500</td><td>€300–500</td><td>€300–500</td></tr>
+          <tr><td>Recognition fees (CORU / DGPROF / DREETS / NARIC)</td><td>€410–800</td><td>€200–500</td><td>€200–500</td><td>€300–600</td></tr>
+          <tr style="font-weight:600"><td>Total minimum (no scholarship)</td><td>€60,000–90,000</td><td>€22,000–43,000</td><td>€26,000–45,000</td><td>€34,000–55,000</td></tr>
+          <tr><td>Part-time earnings offset (2 years)</td><td>-€24,000–30,000</td><td>-€16,000–20,000</td><td>-€18,000–22,000</td><td>-€20,000–26,000</td></tr>
+          <tr style="font-weight:600"><td>Net out-of-pocket (working part-time)</td><td>€35,000–66,000</td><td>€6,000–27,000</td><td>€8,000–27,000</td><td>€14,000–35,000</td></tr>
+          <tr><td>Post-study work period (year 3, partial self-funding)</td><td>24 months — can work full-time</td><td>12 months — can work</td><td>12 months — can work</td><td>12 months — can work</td></tr>
+          <tr><td>Blocked account required?</td><td>No</td><td>No</td><td>No (Egypt)</td><td>Yes — €12,744/yr</td></tr>
+          <tr><td>Financial proof minimum</td><td>€10,000 accessible</td><td>€6,000–8,000 sponsorship letter</td><td>€615/month = €7,380/yr</td><td>€1,062/month = €12,744/yr</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note n-green" style="margin-top:.75rem">✓ <strong>Best value conclusion:</strong> Italy and France offer the lowest tuition by far (€1,000–5,800/yr at public universities vs €17,000–26,000 in Ireland). However, Ireland offers the longest post-study work right (24 months vs 12) and the cleanest path to practising as a physiotherapist (English-medium, no language exam for CORU). Belgium offers the best research quality. The optimal choice depends primarily on which language you can invest in learning — or whether you prefer to pay the Irish premium for an English-medium, streamlined experience.</div>
+  </div>
+</section>
+
+<!-- ═══════════════ TIMELINE ═══════════════ -->
+<section id="timeline">
+  <div class="sec-label">Month by month</div>
+  <h2 class="sec-title">Realistic timeline — study to full practice (Ireland example)</h2>
+  <p class="sec-desc">The following timeline uses Ireland as the example (Type B specialist MSc + CORU recognition running in parallel). Timelines for Italy, France and Belgium are broadly similar but with language learning added.</p>
+
+  <div class="card" style="margin-bottom:1.25rem">
+    <div class="tl-wrap">
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--ie)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month −18 to −12 — Egypt: foundations</div>
+        <div class="tl-what"><strong>Start language study</strong> (French/Italian/Dutch if not Ireland). <strong>Gather all documents</strong> from university. Begin Egyptian legalisation chain for degree + transcripts. Sit IELTS or local language exam. Research programmes and application deadlines. Build personal statement and get reference letters.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--ie)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month −12 to −6 — Apply to universities</div>
+        <div class="tl-what"><strong>Submit applications</strong> (non-EU deadlines: Dec–Feb for Ireland/Belgium; open for Italy via Universitaly April–July; France varies). Arrange financial proof. If going to France: register on Campus France / Études en France platform immediately. Await conditional offers. Apply for scholarships (VLIR-UOS, Eiffel, Government of Ireland — most have deadlines 12+ months before programme start).</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month −6 to −3 — Offer accepted + visa application</div>
+        <div class="tl-what"><strong>Receive unconditional offer. Apply for student visa</strong> at the relevant embassy/VFS/TLScontact in Cairo. Ireland: €60 D visa via VFS. Italy: €50–116 D visa via VFS (+ fingerprinting appointment). France: €99 VLS-TS via TLScontact. Belgium: €210 D visa at Belgian embassy. Apply 3+ months before start date. Arrange accommodation (university dorms fill fast — apply immediately).</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--blue)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month 0 — Arrival</div>
+        <div class="tl-what"><strong>Arrive, settle in.</strong> Within 8 days (Italy, Belgium) or 90 days (Ireland, France): register with immigration and get your residence card/IRP. Register with health insurance. Open bank account. Get local SIM. Start orientation week at university. Begin looking for part-time work opportunities in healthcare settings.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:#666"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month 1–3 — Submit CORU/DGPROF/NARIC recognition in parallel</div>
+        <div class="tl-what"><strong>Don't wait until you graduate.</strong> Submit your recognition application for your Egyptian bachelor's degree while you are studying. Being physically present means faster document exchange, ability to respond to queries, and — critically — if a Period of Adaptation is required, it can be done during your studies without a separate visa problem.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:#666"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Year 1–2 — Study, work part-time, build networks</div>
+        <div class="tl-what">Complete your master's. Work part-time (20h/week during term, 40h/week holidays) to earn €10,000–15,000/yr to offset costs. Build professional networks — attend ISCP (Ireland), AIFI (Italy), or your national physiotherapy association events. Complete any Period of Adaptation during clinical placements in your programme if recognition requires it.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--green)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month 24 — Graduate + apply for post-study stay</div>
+        <div class="tl-what"><strong>Ireland:</strong> Apply for Stamp 1G immediately after final results — 24 months. <strong>Italy:</strong> Apply at Questura for Permesso Attesa Occupazione — 12 months. <strong>France:</strong> Apply via ANEF for RÉCE permit — 12 months. <strong>Belgium:</strong> Apply at commune for Orientation Year — 12 months. Ensure your student permit is still valid when you apply.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--green)"></div><div class="tl-line"></div></div>
+        <div class="tl-body"><div class="tl-when">Month 24–36 — Full-time job search + registration</div>
+        <div class="tl-what"><strong>By this point, aim to have:</strong> (1) Recognition decision from CORU/DGPROF/Departement Zorg; (2) Language exam passed (Italy/France/Belgium); (3) Professional order enrolment completed; (4) Job offer confirmed. With all of these, you are a <strong>fully registered, practising physiotherapist</strong> with a legal right to work in the country. Employer applies for work permit; you transition from post-study status to full employment.</div></div></div>
+      <div class="tl-row"><div class="tl-left"><div class="tl-dot" style="background:var(--purple)"></div></div>
+        <div class="tl-body"><div class="tl-when">Year 3–5 — Building long-term residency</div>
+        <div class="tl-what">Ireland: CSEP → Stamp 4 after 2 years → permanent residency pathway. Italy: Carta di Soggiorno after 5 years. France: Carte de Résident after 5 years of regular residence. Belgium: EU long-term residence permit after 5 years. All four countries provide a route to permanent residency and, eventually, citizenship for those who remain employed in their profession.</div></div></div>
+    </div>
+  </div>
+
+  <!-- DECISION GUIDE -->
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:.75rem">🗺️ Which country is right for you? — decision guide</div>
+    <table class="tt">
+      <thead><tr><th>Your situation</th><th>Recommended route</th></tr></thead>
+      <tbody>
+        <tr><td>You speak fluent English, want the cleanest path, cost is secondary</td><td><span class="badge bg-ie">🇮🇪 Ireland</span> — 24-month post-study, CORU registration, English throughout</td></tr>
+        <tr><td>You already speak French (common in Egypt), want low tuition, don't mind a slower process</td><td><span class="badge bg-fr">🇫🇷 France</span> — €2,895/yr tuition, RÉCE permit, CAF housing support</td></tr>
+        <tr><td>You want the most affordable total cost and are willing to learn Italian</td><td><span class="badge bg-it">🇮🇹 Italy</span> — DSU scholarship, €1,000–5,000/yr tuition, beautiful country</td></tr>
+        <tr><td>You want research excellence, have strong academic record, can access scholarship funding</td><td><span class="badge bg-be">🇧🇪 Belgium</span> — KU Leuven world-class, VLIR-UOS scholarship, EU capital networks</td></tr>
+        <tr><td>You already have CORU recognition underway but need legal presence in Ireland for POA</td><td><span class="badge bg-ie">🇮🇪 Ireland</span> — Type B specialist MSc gives you 2 years on a student visa to complete POA</td></tr>
+        <tr><td>You are applying to France but hitting the 2% non-EU quota barrier</td><td><span class="badge bg-fr">🇫🇷 France</span> — University master's (not IFMK) avoids the 2% cap; builds French CV and experience for DREETS authorisation</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</div><!-- /main -->
+
+<footer>
+  <p style="color:rgba(244,241,235,.7);margin-bottom:.4rem">Egypt → Europe · Master's in Physiotherapy guide · Ireland · Italy · France · Belgium · Compiled June 2026</p>
+  <p>Sources: coru.ie · ucd.ie · ucc.ie · salute.gov.it · campusfrance.org · service-public.gouv.fr · departementzorg.be · kuleuven.be · studyinflanders.be · vfsglobal.com (Cairo) · irishimmigration.ie · ibz.be · IDP Ireland · Campus France · Mastersportal.com · Numbeo 2026</p>
+  <p style="margin-top:.5rem">All tuition fees, financial requirements and visa rules are subject to annual change. Verify current figures directly with your target university and the relevant consulate/embassy before making decisions. This guide is informational only and does not constitute immigration, legal, or financial advice.</p>
+</footer>
+
+<script>
+const secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.nav a');
+new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=document.querySelector(`.nav a[href="#${e.target.id}"]`);if(a){a.classList.add('active');a.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'})}}})},{threshold:.2,rootMargin:'-60px 0px -60% 0px'}).observe&&secs.forEach(s=>new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('active'));const a=document.querySelector(`.nav a[href="#${e.target.id}"]`);if(a){a.classList.add('active');a.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'})}}})},{threshold:.2,rootMargin:'-60px 0px -60% 0px'}).observe(s));
+</script>
+</body>
+</html>
