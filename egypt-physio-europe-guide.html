@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Egypt → Europe: Physiotherapist Relocation Guide — Italy, France & Belgium</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f0ede6;
+  --surface: #ffffff;
+  --surface2: #f7f5f0;
+  --border: #e0dbd2;
+  --border2: #cdc8bc;
+  --text: #1c1a17;
+  --text2: #5c5850;
+  --text3: #948e84;
+  --it: #009246;   --it-bg: #e8f5ec;   --it-border: #a8d8b5;   --it-dark: #006830;
+  --fr: #002395;   --fr-bg: #e8ecf8;   --fr-border: #a5b3e8;   --fr-dark: #001a6e;
+  --be: #000000;   --be-bg: #f5f0e8;   --be-border: #d4b87a;   --be-dark: #7a5a00;
+  --green: #1d6b46; --green-bg: #eaf4ee; --green-border: #a0ccb2;
+  --amber: #7a4a0a; --amber-bg: #fef3e2; --amber-border: #e8c278;
+  --red: #8a1f1f;   --red-bg: #fdeaea;   --red-border: #f0a0a0;
+  --blue: #1a4a88;  --blue-bg: #e8f0fb;  --blue-border: #a0b8df;
+  --purple: #4a2e88; --purple-bg: #f0ecfc; --purple-border: #b8a8e8;
+  --radius: 10px; --radius-sm: 6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.65}
+
+/* HERO */
+.hero{background:var(--text);color:#f0ede6;padding:3.5rem 2rem 3rem;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:350px;height:350px;border-radius:50%;border:1px solid rgba(240,237,230,.06)}
+.hero::after{content:'';position:absolute;bottom:-60px;left:-40px;width:240px;height:240px;border-radius:50%;border:1px solid rgba(240,237,230,.04)}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(240,237,230,.45);margin-bottom:1rem}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin-bottom:.75rem}
+.hero h1 em{font-style:italic;color:#d4a574}
+.hero p{font-size:15px;color:rgba(240,237,230,.6);max-width:560px;line-height:1.7}
+.flag-strip{display:flex;gap:12px;margin-top:1.5rem;flex-wrap:wrap}
+.flag-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(240,237,230,.55);padding:6px 14px;border:1px solid rgba(240,237,230,.14);border-radius:20px}
+.flag-item span{font-size:20px}
+
+/* NAV */
+.nav-wrap{position:sticky;top:0;z-index:100;background:rgba(240,237,230,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{max-width:900px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex-shrink:0;font-size:13px;font-weight:500;color:var(--text2);padding:13px 15px;text-decoration:none;border-bottom:2px solid transparent;transition:.15s;white-space:nowrap}
+.nav a:hover{color:var(--text);border-color:var(--border2)}
+.nav a.active{color:#c0380a;border-color:#c0380a}
+
+/* COUNTRY TABS */
+.country-tabs{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap}
+.ctab{flex:1;min-width:120px;padding:10px 14px;border-radius:var(--radius);border:1.5px solid var(--border);background:var(--surface);cursor:pointer;font-size:13px;font-weight:600;color:var(--text2);transition:.15s;display:flex;align-items:center;gap:8px;justify-content:center}
+.ctab:hover{background:var(--surface2)}
+.ctab.active-it{background:var(--it-bg);color:var(--it-dark);border-color:var(--it)}
+.ctab.active-fr{background:var(--fr-bg);color:var(--fr-dark);border-color:var(--fr)}
+.ctab.active-be{background:var(--be-bg);color:var(--be-dark);border-color:var(--be-border)}
+.country-flag{font-size:22px}
+.cpanel{display:none}.cpanel.active{display:block}
+
+/* LAYOUT */
+.main{max-width:900px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+section{margin-bottom:3.5rem}
+.section-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem}
+.section-title{font-family:'Playfair Display',serif;font-size:1.65rem;line-height:1.25;margin-bottom:.5rem}
+.section-desc{font-size:14px;color:var(--text2);max-width:640px;margin-bottom:1.75rem;line-height:1.7}
+
+/* CARDS */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem}
+.card+.card{margin-top:.75rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+@media(max-width:640px){.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.ctab{min-width:90px}}
+@media(max-width:800px) and (min-width:641px){.grid-3{grid-template-columns:1fr 1fr}}
+
+/* BADGES */
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.03em}
+.badge-green{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.badge-amber{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-border)}
+.badge-red{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
+.badge-blue{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-border)}
+.badge-purple{background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-border)}
+.badge-it{background:var(--it-bg);color:var(--it-dark);border:1px solid var(--it-border)}
+.badge-fr{background:var(--fr-bg);color:var(--fr-dark);border:1px solid var(--fr-border)}
+.badge-be{background:var(--be-bg);color:var(--be-dark);border:1px solid var(--be-border)}
+
+/* NOTES */
+.note{font-size:13px;border-radius:var(--radius-sm);padding:10px 14px;line-height:1.6;margin-top:.75rem}
+.note-green{background:var(--green-bg);color:var(--green);border-left:3px solid var(--green)}
+.note-amber{background:var(--amber-bg);color:var(--amber);border-left:3px solid var(--amber-border)}
+.note-red{background:var(--red-bg);color:var(--red);border-left:3px solid var(--red-border)}
+.note-blue{background:var(--blue-bg);color:var(--blue);border-left:3px solid var(--blue-border)}
+.note-it{background:var(--it-bg);color:var(--it-dark);border-left:3px solid var(--it)}
+.note-fr{background:var(--fr-bg);color:var(--fr-dark);border-left:3px solid var(--fr)}
+.note-be{background:var(--be-bg);color:var(--be-dark);border-left:3px solid var(--be-border)}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:.9rem}
+.step-line{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:30px}
+.step-num{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.dot-it{background:var(--it-bg);color:var(--it-dark);border:1px solid var(--it-border)}
+.dot-fr{background:var(--fr-bg);color:var(--fr-dark);border:1px solid var(--fr-border)}
+.dot-be{background:var(--be-bg);color:var(--be-dark);border:1px solid var(--be-border)}
+.dot-green{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.step-connector{width:1px;background:var(--border);flex:1;min-height:16px;margin:3px 0}
+.step-body{flex:1;padding-bottom:1.4rem}
+.step-title{font-size:14px;font-weight:600;margin-bottom:4px;padding-top:4px}
+.step-desc{font-size:13px;color:var(--text2);line-height:1.65}
+
+/* TABLES */
+.t-table{width:100%;border-collapse:collapse;font-size:13px}
+.t-table th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text3);padding:7px 10px;border-bottom:1px solid var(--border2)}
+.t-table td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.55}
+.t-table tr:last-child td{border-bottom:none}
+.t-table td:first-child{color:var(--text2)}
+.warn-row td{background:var(--amber-bg)}
+.warn-row td{color:var(--amber)}
+
+/* EXPENSE */
+.exp-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.exp-row{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;padding:.6rem 0;border-bottom:1px solid var(--border);font-size:13px}
+.exp-row:last-child{border-bottom:none}
+.exp-name{flex:1;line-height:1.5}
+.exp-name .sub{font-size:11px;color:var(--text3);margin-top:1px}
+.exp-amount{font-weight:700;font-size:13px;white-space:nowrap;text-align:right;min-width:90px}
+.exp-mb{margin-bottom:1.5rem}
+.total-block{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1rem}
+@media(max-width:500px){.total-block{grid-template-columns:1fr}}
+.total-card{border-radius:var(--radius-sm);padding:1rem 1.25rem;color:#f0ede6}
+.total-card.min{background:var(--text2)}
+.total-card.real{background:var(--text)}
+.total-label{font-size:12px;font-weight:600;opacity:.7;margin-bottom:4px}
+.total-sub{font-size:11px;opacity:.5;margin-bottom:6px}
+.total-num{font-family:'Playfair Display',serif;font-size:1.5rem}
+
+/* COST RANGE */
+.cost-row{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;padding:.6rem 0;border-bottom:1px solid var(--border);font-size:13px}
+.cost-row:last-child{border-bottom:none}
+.cost-label{flex:1}.cost-label .sub{font-size:11px;color:var(--text3)}
+.cost-val{font-weight:600;text-align:right;white-space:nowrap;font-size:13px}
+
+/* COMPARISON TABLE */
+.comp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.comp-table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+.comp-table th{padding:10px 12px;font-weight:600;font-size:12px;text-align:left;border-bottom:2px solid var(--border)}
+.comp-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle;line-height:1.5}
+.comp-table tr:last-child td{border-bottom:none}
+.comp-table .hl{font-weight:600}
+.th-it{background:var(--it-bg);color:var(--it-dark)}
+.th-fr{background:var(--fr-bg);color:var(--fr-dark)}
+.th-be{background:var(--be-bg);color:var(--be-dark)}
+
+/* CALLOUT */
+.callout{border-radius:var(--radius);padding:1.25rem 1.5rem;font-size:13px;line-height:1.7;margin-bottom:1rem}
+.callout-title{font-weight:600;font-size:14px;margin-bottom:.4rem}
+
+/* TL */
+.tl-item{display:flex;gap:.75rem}
+.tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:12px}
+.tl-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.tl-conn{width:1px;background:var(--border);flex:1;min-height:8px;margin:3px 0}
+.tl-body{flex:1;padding-bottom:.9rem}
+.tl-when{font-size:11px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.tl-what{font-size:13px;line-height:1.6;color:var(--text2)}
+.tl-what strong{color:var(--text);font-weight:600}
+.divider{height:1px;background:var(--border);margin:1.5rem 0}
+.pro-con-list{list-style:none;margin-top:.5rem}
+.pro-con-list li{font-size:12px;color:var(--text2);line-height:1.5;padding:2px 0;display:flex;gap:6px}
+.icon-pro{color:var(--green)}.icon-con{color:var(--red)}.icon-warn{color:var(--amber)}
+footer{background:var(--text);color:rgba(240,237,230,.4);font-size:12px;text-align:center;padding:2rem 1.5rem;line-height:1.8}
+footer a{color:rgba(240,237,230,.6)}
+@media print{.nav-wrap{display:none}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Egypt → Europe · Physiotherapist relocation guide</div>
+    <h1>Italy, France <em>&</em> Belgium</h1>
+    <p>Complete country-by-country guide for Egyptian physiotherapists: recognition procedures, visa routes, all costs, living expenses, and salaries — verified June 2026.</p>
+    <div class="flag-strip">
+      <div class="flag-item"><span>🇮🇹</span> Italy</div>
+      <div class="flag-item"><span>🇫🇷</span> France</div>
+      <div class="flag-item"><span>🇧🇪</span> Belgium</div>
+      <div class="flag-item"><span>🇪🇬</span> Non-EU applicant</div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="#comparison">Comparison</a>
+    <a href="#italy">Italy</a>
+    <a href="#france">France</a>
+    <a href="#belgium">Belgium</a>
+    <a href="#documents">Egypt docs</a>
+    <a href="#living">Living costs</a>
+    <a href="#salaries">Salaries</a>
+    <a href="#checklist">Checklist</a>
+  </nav>
+</div>
+
+<div class="main">
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: COMPARISON AT A GLANCE
+═══════════════════════════════════════════════════════ -->
+<section id="comparison">
+  <div class="section-label">Side by side</div>
+  <h2 class="section-title">Which country to choose?</h2>
+  <p class="section-desc">The three countries differ dramatically in how hard the recognition process is for non-EU applicants. France is the most restrictive; Belgium and Italy offer more structured (if slower) paths.</p>
+
+  <div class="card">
+    <div class="comp-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th class="th-it">🇮🇹 Italy</th>
+            <th class="th-fr">🇫🇷 France</th>
+            <th class="th-be">🇧🇪 Belgium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Recognition body</td><td>Ministero della Salute (DGPROF)</td><td>DREETS (regional) + Ministère Santé</td><td>Dept. of Care (Flanders) / FWB (Wallonia) + FPS Health</td></tr>
+          <tr><td>Process difficulty (non-EU)</td><td><span class="badge badge-amber">Moderate</span></td><td><span class="badge badge-red">Hard — quota limit</span></td><td><span class="badge badge-amber">Moderate-Hard</span></td></tr>
+          <tr><td>Italian/French/Dutch language required?</td><td><span class="badge badge-red">Yes — exam required</span></td><td><span class="badge badge-red">Yes — patient safety standard</span></td><td><span class="badge badge-red">Yes — Dutch (Flanders) or French (Wallonia/Brussels)</span></td></tr>
+          <tr><td>Recognition timeline</td><td>12–24 months (backlog)</td><td>Up to 24 months (can be longer)</td><td>Max 4 months once file complete</td></tr>
+          <tr><td>Possible compensatory measure?</td><td>Yes — aptitude test or stage</td><td>Yes — partial exemption + selection test for non-EU (2% cap)</td><td>Yes — aptitude test or stage</td></tr>
+          <tr><td>Work visa type</td><td>Decreto Flussi / Nulla Osta (quota-based)</td><td>Work permit (autorisation de travail)</td><td>Single Permit (Permis Unique)</td></tr>
+          <tr><td>Visa difficulty (non-EU)</td><td><span class="badge badge-red">Hard — annual quota system</span></td><td><span class="badge badge-amber">Moderate</span></td><td><span class="badge badge-amber">Moderate</span></td></tr>
+          <tr><td>Minimum salary for permit</td><td>CCNL sector minimum (~€22k–28k pub.)</td><td>SMIC minimum (~€21,200 gross/yr)</td><td>€48,912–53,220/yr (highly skilled, varies by region)</td></tr>
+          <tr><td>Entry-level physio salary</td><td>€25,000–35,000/yr gross</td><td>€27,000–35,000/yr gross</td><td>€32,000–45,000/yr gross</td></tr>
+          <tr><td>Living costs (single, incl. rent)</td><td>€1,600–2,700/mo</td><td>€1,500–2,500/mo (Paris: €2,500–4,500)</td><td>€1,800–2,500/mo</td></tr>
+          <tr class="warn-row"><td>Biggest risk</td><td>Long queue at Ministry + language barrier</td><td>Non-EU 2% cap makes access very restricted</td><td>High salary threshold may disqualify junior roles</td></tr>
+          <tr><td>Recommended for this profile?</td><td><span class="badge badge-amber">Possible but slow</span></td><td><span class="badge badge-red">Very hard as non-EU</span></td><td><span class="badge badge-green">Most structured path</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="note note-amber" style="margin-top:.75rem">⚠ <strong>Key EU context for all three countries:</strong> As a non-EU Egyptian national, you are always subject to the <em>general system</em> of recognition — not the faster automatic EU/EPC route (reserved for EU nationals). The European Professional Card (EPC) for physiotherapists <strong>cannot</strong> be used unless your qualification has first been recognised in an EU/EEA country. The smart strategy: get recognised in one country first, then use the EPC to move within the EU more easily.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: ITALY
+═══════════════════════════════════════════════════════ -->
+<section id="italy">
+  <div class="section-label">Country guide</div>
+  <h2 class="section-title">🇮🇹 Italy</h2>
+  <p class="section-desc">Italy requires a two-step process: recognition by the Ministry of Health (Ministero della Salute), then enrolment with the provincial TSRM-PSTRP professional order. You must also pass an Italian language exam before you can practise.</p>
+
+  <div class="grid-2" style="margin-bottom:1rem">
+    <div class="callout" style="background:var(--it-bg);border:1px solid var(--it-border)">
+      <div class="callout-title" style="color:var(--it-dark)">Track 1 — Professional recognition</div>
+      <div style="font-size:13px;color:var(--it-dark);line-height:1.65">Submit dossier to the <strong>Ministero della Salute — DGPROF Ufficio 04</strong> (Viale Giorgio Ribotta 5, 00144 Roma). Filed by post. No online system for non-EU applicants.</div>
+    </div>
+    <div class="callout" style="background:var(--it-bg);border:1px solid var(--it-border)">
+      <div class="callout-title" style="color:var(--it-dark)">Track 2 — Work visa</div>
+      <div style="font-size:13px;color:var(--it-dark);line-height:1.65">Employer obtains a <strong>Nulla Osta</strong> through the <em>Decreto Flussi</em> quota system, then you apply for a Type D visa at the Italian consulate in Egypt.</div>
+    </div>
+  </div>
+
+  <!-- TRACK 1 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--it-dark)">Track 1 — DGPROF recognition (step by step)</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Prepare your dossier</div>
+          <div class="step-desc">Fill in Application Form D2-26 (Fisioterapista – paese extracomunitario), download from salute.gov.it. Affix a €16 bollo fiscale (revenue stamp). Include: degree certificate legalised by Italian consulate in Egypt or via apostille chain; official academic transcript; detailed syllabus; clinical placement records; translation into Italian by a sworn translator certified by the Italian consulate in Cairo or authenticated by the Italian tribunal; photocopy of passport (certified by Italian consulate or municipal office – colour copies NOT accepted). A Certificate of Good Standing from the Egyptian professional body is also advisable.</div>
+          <div class="note note-amber">⚠ Egypt is NOT in the Hague Convention. Documents must be legalised by the Italian Diplomatic/Consular Authority in Egypt — not through a simple apostille. Plan 6–10 weeks for this chain.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Mail the dossier to DGPROF in Rome</div>
+          <div class="step-desc">Send by registered post (raccomandata A/R) to: <em>Direzione Generale delle Professioni Sanitarie e delle Politiche in favore del SSN — DGPROF Ufficio 2, Viale Giorgio Ribotta 5, 00144 Roma, Italy.</em> Keep the receipt. Allow several months before any response — the backlog is real and well-documented.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Wait for the Ministry decree — 12–24 months</div>
+          <div class="step-desc">The Ministry may request additional documents at any point (interrupting the clock). Possible outcomes: full recognition decree (equipollenza); conditional decree requiring an aptitude test or supervised placement (tirocinio); or rejection. The backlog for non-EU health professionals is significant — 12–24 months is realistic, sometimes longer.</div>
+          <div class="note note-amber">⚠ You cannot practise while waiting. There is no interim/temporary registration in Italy for non-EU applicants awaiting a decree.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">4</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Pass the Italian language exam</div>
+          <div class="step-desc">Once the decree is issued, before enrolling with the provincial Order, you must pass an Italian language exam — oral and written — to demonstrate you can communicate safely with patients and colleagues. This is conducted by the provincial TSRM-PSTRP Order. Typically requires B2 level; in practice you need genuine fluency. Certificate from a recognised Italian language institute (e.g. CELI, CILS, PLIDA) is accepted as evidence.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">5</div></div>
+        <div class="step-body">
+          <div class="step-title">Enrol with the provincial TSRM-PSTRP Order (Albo)</div>
+          <div class="step-desc">After the Ministry decree and language clearance, register with the TSRM-PSTRP Order in the province where you will work (e.g. tsrmpstrproma.it for Rome). Submit the Ministry decree, proof of language, passport, and pay the annual membership fee (~€150–200/yr). You are now legally registered to practise in Italy.</div>
+          <div class="note note-it">ℹ️ Note: professional recognition (decreto) does NOT entitle you to use the Italian academic title "Dottore in…" and does NOT allow enrolment in postgraduate programmes (master, specialisation, PhD). That requires separate academic recognition (equipollenza accademica) through a university.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRACK 2 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--it-dark)">Track 2 — Decree Flussi, Nulla Osta & visa</div>
+    <div class="note note-red" style="margin-bottom:1rem">⚠ Italy's work visa system is one of the most complex in the EU. Non-EU workers are subject to annual quotas (Decreto Flussi). The 2026–2028 decree authorises ~500,000 entries over 3 years. However, quota applications open on unpredictable "click days" — windows that close in hours. This requires careful preparation and timing.</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Find an Italian employer</div>
+          <div class="step-desc">The employer must be an Italian entity registered with the Agenzia delle Entrate. Healthcare employers: SSN (public), IRCCS, private clinics, rehabilitation centres. Jobs: Borsa Lavoro regionale, indeed.it, InfoJobs, direct applications to ASL (local health authority) or private clinics. The 2026 Decreto Flussi introduced a specific sub-quota for nurses and physiotherapists, allowing faster Nulla Osta processing in healthcare — a positive development for this profession.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Employer applies for Nulla Osta via Sportello Unico per l'Immigrazione (SUI)</div>
+          <div class="step-desc">The employer submits the Nulla Osta request to the provincial SUI (Prefettura) during the Decreto Flussi window. The application is online and processed on a first-come, first-served basis. The employer must confirm intent to hire within 7 days of notification. This process can take weeks to months depending on the quota sub-category.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Apply for Type D work visa at the Italian consulate in Egypt</div>
+          <div class="step-desc">Once the Nulla Osta is granted, the employer is notified and you can apply for the Visto per Lavoro Subordinato (Type D) at the Italian embassy or consulate serving Egypt. You must enter Italy within the visa validity window. Required: Nulla Osta copy, employment contract, accommodation proof, passport, financial means evidence. Visa fee: ~€50–116.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">4</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Arrive and sign Contratto di Soggiorno — within 8 days</div>
+          <div class="step-desc">Within 8 working days of arrival, you and your employer go to the SUI to sign the <em>Contratto di Soggiorno</em> (residence-work contract). This is mandatory — missing it can void your permit. Then apply for the <em>Permesso di Soggiorno per Lavoro Subordinato</em> at the local post office (Poste Italiane — specific offices handle immigration forms).</div>
+          <div class="note note-amber">⚠ The physical Permesso di Soggiorno card may take months to issue after arrival, but you are already legally entitled to work once the Contratto di Soggiorno is signed.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-it">5</div></div>
+        <div class="step-body">
+          <div class="step-title">Register with the Comune (municipal office)</div>
+          <div class="step-desc">Register your address at the local Anagrafe (registry office). This gives you a Certificato di Residenza — needed for many services. Apply for your Codice Fiscale (tax code) at the Agenzia delle Entrate if not already issued with your visa.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITALY EXPENSES -->
+  <div class="card">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--it-dark)">Italy — all costs</div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📄 Document preparation (in Egypt)</div>
+      <div class="exp-row"><div class="exp-name">Egyptian notarisation + legalisation chain (MFA → Italian consulate)<div class="sub">Per document set. Multiple documents needed.</div></div><div class="exp-amount">€80–180</div></div>
+      <div class="exp-row"><div class="exp-name">Italian sworn translation (per page, certified by Italian consulate or tribunal)<div class="sub">Full degree + transcript + syllabus = many pages</div></div><div class="exp-amount">€10–20/page</div></div>
+      <div class="exp-row"><div class="exp-name">Bollo fiscale (revenue stamp for application form)</div><div class="exp-amount">€16</div></div>
+      <div class="exp-row"><div class="exp-name">Police clearance + legalisation</div><div class="exp-amount">€30–60</div></div>
+      <div class="exp-row"><div class="exp-name">Registered post to Rome (DHL/FedEx recommended)</div><div class="exp-amount">€50–80</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🏥 Track 1 — DGPROF recognition & order enrolment</div>
+      <div class="exp-row"><div class="exp-name">Ministry application (no fee beyond the bollo — recognition itself is free)</div><div class="exp-amount">€0 (+ €16 stamp)</div></div>
+      <div class="exp-row"><div class="exp-name">Italian language certificate (CELI/CILS/PLIDA exam)<div class="sub">Course costs extra; exam alone ~€150–250</div></div><div class="exp-amount">€150–250</div></div>
+      <div class="exp-row"><div class="exp-name">Italian language course (if needed to reach B2)<div class="sub">Group lessons Italy: €300–800 for a course. Online: €100–300.</div></div><div class="exp-amount">€100–800</div></div>
+      <div class="exp-row"><div class="exp-name">TSRM-PSTRP provincial order enrolment<div class="sub">Annual fee, varies by province</div></div><div class="exp-amount">~€150–200/yr</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📋 Track 2 — Work visa</div>
+      <div class="exp-row"><div class="exp-name">Nulla Osta application fee (employer)<div class="sub">Administrative costs; the nulla osta itself is free but employers may use agencies (€200–500)</div></div><div class="exp-amount">€0 (employer)</div></div>
+      <div class="exp-row"><div class="exp-name">Type D visa fee (Italian consulate)</div><div class="exp-amount">~€50–116</div></div>
+      <div class="exp-row"><div class="exp-name">VFS Global / consulate service fee</div><div class="exp-amount">€25–40</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🇮🇹 On arrival in Italy</div>
+      <div class="exp-row"><div class="exp-name">Permesso di Soggiorno kit (at post office — Kit istanza)</div><div class="exp-amount">~€30</div></div>
+      <div class="exp-row"><div class="exp-name">Permesso di Soggiorno card fee</div><div class="exp-amount">€40–50</div></div>
+      <div class="exp-row"><div class="exp-name">Codice Fiscale (tax code)</div><div class="exp-amount">Free</div></div>
+      <div class="exp-row"><div class="exp-name">Rental deposit (2 months standard)<div class="sub">Milan/Rome: €1,200–3,000 deposit. Mid-size cities: €800–1,800.</div></div><div class="exp-amount">€800–3,000</div></div>
+      <div class="exp-row"><div class="exp-name">Temporary accommodation (2–4 weeks while finding housing)</div><div class="exp-amount">€400–1,500</div></div>
+      <div class="exp-row"><div class="exp-name">Flight Cairo → Rome/Milan (one-way)</div><div class="exp-amount">€200–500</div></div>
+      <div class="exp-row"><div class="exp-name">Household setup, SIM card, bank account</div><div class="exp-amount">€200–600</div></div>
+    </div>
+    <div class="total-block">
+      <div class="total-card min"><div class="total-label">Minimum (mid-size city, employer pays permit)</div><div class="total-sub">Before first salary</div><div class="total-num">~€3,000–4,500</div></div>
+      <div class="total-card real"><div class="total-label">Realistic (Milan/Rome, all costs)</div><div class="total-sub">Before first salary</div><div class="total-num">~€6,000–9,000</div></div>
+    </div>
+    <div class="note note-amber" style="margin-top:.75rem">⚠ <strong>No blocked account required</strong> for a lavoro subordinato visa. You must show financial means (bank statements) but no frozen-deposit requirement.</div>
+    <div class="note note-red" style="margin-top:.5rem">⚠ <strong>Critical timing issue:</strong> You cannot get the work visa until you have the Nulla Osta. You cannot legally practise until you have the Ministry decree AND the language exam AND order enrolment. These processes take 12–24+ months in total, meaning you may arrive in Italy on a valid work visa but still not be able to practise as a physiotherapist for many more months. Plan this very carefully. Working in a different healthcare role while your recognition is pending is one way some applicants bridge this gap.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: FRANCE
+═══════════════════════════════════════════════════════ -->
+<section id="france">
+  <div class="section-label">Country guide</div>
+  <h2 class="section-title">🇫🇷 France</h2>
+  <p class="section-desc">France is the most difficult of the three for a non-EU physiotherapist. The direct route (autorisation d'exercice via DREETS) exists, but is subject to a 2% annual intake cap. The realistic alternative is completing a partial exemption programme at a French physiotherapy institute.</p>
+
+  <div class="note note-red" style="margin-bottom:1.25rem">⚠ <strong>The 2% quota rule (Article 27–32 of the 2015 decree on the physiotherapy state diploma):</strong> The total number of non-EU candidates admitted to French physiotherapy institutes in a given year via partial exemption cannot exceed 2% of that institute's annual intake. In practice this means very limited places nationwide and often waitlists of 2–3+ years. This is the single biggest structural barrier for Egyptian applicants.</div>
+
+  <div class="grid-2" style="margin-bottom:1rem">
+    <div class="callout" style="background:var(--fr-bg);border:1px solid var(--fr-border)">
+      <div class="callout-title" style="color:var(--fr-dark)">Track 1 — Professional recognition (non-EU route)</div>
+      <div style="font-size:13px;color:var(--fr-dark);line-height:1.65">DREETS (Direction Régionale de l'Économie, de l'Emploi, du Travail et des Solidarités) in the region where you will work. Requires proof of 1,500 hours of clinical experience across 5 domains.</div>
+    </div>
+    <div class="callout" style="background:var(--fr-bg);border:1px solid var(--fr-border)">
+      <div class="callout-title" style="color:var(--fr-dark)">Track 2 — Work visa</div>
+      <div style="font-size:13px;color:var(--fr-dark);line-height:1.65">Autorisation de travail (work authorisation) obtained by the employer, then Visa de long séjour valant titre de séjour (VLS-TS) – salaire from the French consulate in Egypt.</div>
+    </div>
+  </div>
+
+  <!-- FRANCE TRACK 1 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--fr-dark)">Track 1 — Two sub-routes depending on your clinical experience</div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1rem">
+      <div style="border:1.5px solid var(--green);border-radius:var(--radius);padding:1rem">
+        <div style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:.5rem">Route A — Direct autorisation d'exercice</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.6">If you can demonstrate ≥1,500 hours of clinical experience in France covering all 5 required speciality areas (orthopedics, neurology, cardio-respiratory, pediatrics, geriatrics), you can apply directly to the regional DREETS for an autorisation d'exercice — without completing further training.<br><br>If there are gaps, the commission may require validation internships (stages de validation) in France before granting the authorisation.</div>
+        <ul class="pro-con-list" style="margin-top:.5rem">
+          <li><span class="icon-pro">✓</span> Faster if experience is well-documented</li>
+          <li><span class="icon-con">✗</span> Requires 1,500h verifiable hours in France across all domains</li>
+          <li><span class="icon-con">✗</span> Egyptian experience may not fully count</li>
+        </ul>
+      </div>
+      <div style="border:1px solid var(--border);border-radius:var(--radius);padding:1rem">
+        <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:.5rem">Route B — Partial exemption + selection test (most common for new graduates)</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.6">Non-EU graduates without sufficient French clinical experience apply for a <em>dispense partielle de formation</em> at a French physiotherapy institute. Your file is assessed; if admitted, you complete the missing portions of the French curriculum and then sit the state diploma exam (Diplôme d'État de Masseur-Kinésithérapeute).<br><br>Subject to the 2% annual intake cap per institute.</div>
+        <ul class="pro-con-list" style="margin-top:.5rem">
+          <li><span class="icon-pro">✓</span> Leads to the French state diploma — full equivalence</li>
+          <li><span class="icon-con">✗</span> Very limited places (2% cap)</li>
+          <li><span class="icon-con">✗</span> Could take 1–3 years on a student visa</li>
+          <li><span class="icon-con">✗</span> Costs: tuition €175–250/yr + living costs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Identify your target region and DREETS</div>
+          <div class="step-desc">Contact the DREETS in the region where you plan to work. Each region manages its own dossier process and commission dates (CRAE — Commission Régionale d'Autorisation d'Exercice). Some regions now require online dossier submission only (e.g. Occitanie from June 2025). Do not send paper dossiers to a wrong region.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Submit your dossier to DREETS</div>
+          <div class="step-desc">Required documents: degree certificate (legalised by French consulate in Egypt — same legalisation chain as Italy since Egypt is not in Hague Convention); official transcript; detailed programme certificate; academic grade certificate; thesis/dissertation summary; employment certificates documenting clinical experience by domain; proof of French language proficiency (minimum B2 strongly advised; C1 for professional practice); identity document; project of establishment in that region (you must have a clear plan to work there).</div>
+          <div class="note note-fr">💡 The DREETS requires a clear <em>projet d'exercice</em> — you need to show a genuine connection to the region (job offer, accommodation, local ties). Without this, many dossiers are returned.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Commission CRAE assessment — 6–24 months</div>
+          <div class="step-desc">The regional commission examines your file and compares your training to French standards. Possible outcomes: full autorisation d'exercice; compensatory measure required (aptitude test or supervised placement); admission to a physiotherapy institute for partial exemption training; or rejection. The commission meets only a few times per year, creating long delays.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">4</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Register with the Ordre des Masseurs-Kinésithérapeutes</div>
+          <div class="step-desc">Once the autorisation d'exercice is granted, register with the regional Conseil de l'Ordre des Masseurs-Kinésithérapeutes. Mandatory to practise in any capacity (salaried or liberal). Pay the annual membership fee (~€75–150/yr). You receive your carte professionnelle.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">5</div></div>
+        <div class="step-body">
+          <div class="step-title">Affiliate with the Assurance Maladie (CPAM)</div>
+          <div class="step-desc">To treat patients under the French health insurance system and bill the Sécurité Sociale, register with your local Caisse Primaire d'Assurance Maladie (CPAM). In private practice, you also need a SIRET number (business registration). For salaried positions, the employer handles this.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRANCE TRACK 2 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--fr-dark)">Track 2 — Work authorisation & visa</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Secure a job offer from a French employer</div>
+          <div class="step-desc">Public hospitals (AP-HP, CHU, CHR), private clinics, EHPAD (elderly care), rehabilitation centres, sports clubs. Job boards: ANFH, Pôle Emploi Santé, LinkedIn, indeed.fr, direct hospital applications. Physiotherapy is in shortage in rural areas and geriatric settings — these are easiest to enter as a non-EU applicant.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Employer applies for Autorisation de Travail</div>
+          <div class="step-desc">The employer (or you, for self-employment) applies to the DREETS for an autorisation de travail. For salaried workers, the employer files on the Services-Entreprises platform (formerly GRETA). France generally requires a labour market test (employers must show no suitable EU candidate was available), though this may be waived for healthcare shortage roles. Processing: 1–3 months.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Apply for the long-stay visa (VLS-TS) from Egypt</div>
+          <div class="step-desc">Apply at the French consulate in Cairo for a Visa de Long Séjour valant Titre de Séjour — Salarié (VLS-TS salarié). Duration typically 1 year, renewable. Required: autorisation de travail, employment contract, CV, degree (legalised), accommodation proof, financial means. Processing: 3–8 weeks. Visa fee: ~€99.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-fr">4</div></div>
+        <div class="step-body">
+          <div class="step-title">Arrive in France and validate your visa</div>
+          <div class="step-desc">Within 3 months of arrival, validate your VLS-TS on the ANEF portal (Administration Numérique pour les Étrangers en France) and pay the tax: €200 for salaried workers. Register with the CPAM, open a French bank account, register your address at the mairie, apply for a Carte Vitale (health card). After 1 year, apply to renew your residence permit as a Titre de Séjour Salarié.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRANCE EXPENSES -->
+  <div class="card">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--fr-dark)">France — all costs</div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📄 Document preparation (in Egypt)</div>
+      <div class="exp-row"><div class="exp-name">Legalisation by French consulate in Cairo<div class="sub">Per document. Egypt not in Hague Convention — full consular chain required.</div></div><div class="exp-amount">€50–100/doc</div></div>
+      <div class="exp-row"><div class="exp-name">Sworn translation into French (certified by French consulate or sworn translator)<div class="sub">Per page</div></div><div class="exp-amount">€15–25/page</div></div>
+      <div class="exp-row"><div class="exp-name">Police clearance (casier judiciaire équivalent) + legalisation</div><div class="exp-amount">€30–60</div></div>
+      <div class="exp-row"><div class="exp-name">Courier/postage costs</div><div class="exp-amount">€40–80</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🏥 Track 1 — Recognition & order</div>
+      <div class="exp-row"><div class="exp-name">DREETS dossier filing — no fee</div><div class="exp-amount">€0</div></div>
+      <div class="exp-row"><div class="exp-name">French language certificate (DELF B2/TCF/DALF C1)<div class="sub">Exam fee; course costs vary widely</div></div><div class="exp-amount">€100–200</div></div>
+      <div class="exp-row"><div class="exp-name">French language course (if needed)<div class="sub">Alliance Française, private tuition</div></div><div class="exp-amount">€300–1,500</div></div>
+      <div class="exp-row"><div class="exp-name">Ordre des Masseurs-Kinésithérapeutes annual membership</div><div class="exp-amount">~€75–150/yr</div></div>
+      <div class="exp-row"><div class="exp-name">Partial exemption programme tuition (Route B, only if required)<div class="sub">University inscription + CVEC contribution</div></div><div class="exp-amount">€280–400/yr</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📋 Track 2 — Work visa</div>
+      <div class="exp-row"><div class="exp-name">VLS-TS visa fee (French consulate)</div><div class="exp-amount">~€99</div></div>
+      <div class="exp-row"><div class="exp-name">VFS Global / consulate service fee</div><div class="exp-amount">€25–40</div></div>
+      <div class="exp-row"><div class="exp-name">ANEF validation tax (on arrival)</div><div class="exp-amount">€200</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🇫🇷 On arrival in France</div>
+      <div class="exp-row"><div class="exp-name">Rental deposit (typically 1 month in France)<div class="sub">Paris 1-bed: €1,200–1,900. Lyon/Marseille: €650–1,200. Regions: €500–900.</div></div><div class="exp-amount">€500–1,900</div></div>
+      <div class="exp-row"><div class="exp-name">Temporary accommodation (2–4 weeks)</div><div class="exp-amount">€400–1,200</div></div>
+      <div class="exp-row"><div class="exp-name">Flight Cairo → Paris/Lyon/Marseille (one-way)</div><div class="exp-amount">€200–500</div></div>
+      <div class="exp-row"><div class="exp-name">CAF housing benefit application (can offset rent significantly)<div class="sub">If eligible — can recoup €100–400/month</div></div><div class="exp-amount">Free to apply</div></div>
+      <div class="exp-row"><div class="exp-name">Bank account, SIM card, household setup</div><div class="exp-amount">€200–600</div></div>
+      <div class="exp-row"><div class="exp-name">Carte Vitale registration (health insurance)</div><div class="exp-amount">Free</div></div>
+      <div class="exp-row"><div class="exp-name">Mutuelle (complementary health insurance)</div><div class="exp-amount">€30–80/mo</div></div>
+    </div>
+    <div class="total-block">
+      <div class="total-card min"><div class="total-label">Minimum (provinces, direct route)</div><div class="total-sub">Before first salary</div><div class="total-num">~€2,500–4,000</div></div>
+      <div class="total-card real"><div class="total-label">Realistic (Paris or with language course)</div><div class="total-sub">Before first salary</div><div class="total-num">~€5,000–8,000</div></div>
+    </div>
+    <div class="note note-red" style="margin-top:.75rem">⚠ If Route B (partial exemption programme) is required, add tuition + 1–2 years of living costs in France on a student visa. This could add €15,000–30,000 in total additional cost before you are fully recognised.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: BELGIUM
+═══════════════════════════════════════════════════════ -->
+<section id="belgium">
+  <div class="section-label">Country guide</div>
+  <h2 class="section-title">🇧🇪 Belgium</h2>
+  <p class="section-desc">Belgium has the most structured and transparent recognition process of the three, with a clear maximum 4-month decision timeline once your file is complete. However, the language requirement (Dutch in Flanders, French in Wallonia/Brussels) is strict, and the highly-qualified salary threshold for the Single Permit is higher than a typical entry physio salary.</p>
+
+  <div class="note note-be" style="margin-bottom:1.25rem">ℹ️ <strong>Belgium's linguistic complexity:</strong> Belgium is split into three linguistic regions. If you work in Flanders (Dutch-speaking), recognition goes through the Flemish Department of Care (Departement Zorg). In Wallonia or Brussels (French-speaking), it goes through the Fédération Wallonie-Bruxelles (FWB). You must choose your region before applying and work in that region. The process in Brussels can go through either system depending on your employer.</div>
+
+  <!-- TRACK 1 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--be-dark)">Track 1 — Recognition (non-EU, outside EEA)</div>
+    <div class="note note-be" style="margin-bottom:.75rem">ℹ️ For non-EEA applicants (Egypt qualifies), Belgium requires three sequential steps before you can practise: NARIC equivalence → Department of Care/FWB recognition → FPS Health visa. Then the INAMI/RIZIV number.</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Step 1A — NARIC academic equivalence</div>
+          <div class="step-desc"><strong>Flanders:</strong> Apply to NARIC Vlaanderen (naricvlaanderen.be) for equivalence of your basic physiotherapy diploma. This confirms your Egyptian degree is at the correct academic level (bachelor's equivalent). Fee: €90. Processing: up to 4 months.<br><strong>Wallonia/Brussels:</strong> Apply to the Service Équivalences de la Fédération Wallonie-Bruxelles (equivalences.cfwb.be). Fee: €14–150 depending on procedure. Processing: 3–6 months.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Step 1B — Professional recognition by Department of Care / FWB</div>
+          <div class="step-desc"><strong>Flanders:</strong> Submit recognition application to Departement Zorg (departementzorg.be) at kinesitherapeuten@vlaanderen.be. Submit one PDF including: completed recognition form, NARIC equivalence decision, degree certificate, transcripts, clinical placement documents, passport. All documents must be translated into Dutch by a sworn translator. Processing: maximum 4 months from complete file.<br><strong>Wallonia/Brussels:</strong> Similar process through the Direction Générale Opérationnelle Santé (DGO Santé Wallonie).</div>
+          <div class="note note-amber">⚠ If there are significant differences between your Egyptian training and Belgian standards, the Recognition Committee may require an aptitude test or a supervised adaptation period (stage d'adaptation) before granting recognition.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Step 1C — FPS Health visa (visa INAMI/RIZIV)</div>
+          <div class="step-desc">This is a specific Belgian requirement for healthcare practitioners. After receiving the Department of Care recognition, apply to the Federal Public Service (FPS) Health, Food Chain Safety and Environment for the <em>visa</em> to practise — this is a professional authorisation, not an immigration visa. Submit both the NARIC equivalence AND the Department of Care recognition to the FPS Health. This step often takes an additional 3–6 months as it goes through multiple committee reviews.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">4</div></div>
+        <div class="step-body">
+          <div class="step-title">Step 1D — INAMI/RIZIV number (billing/insurance number)</div>
+          <div class="step-desc">Once the FPS Health visa is obtained and you are employed, apply for your INAMI number (French: Institut National d'Assurance Maladie-Invalidité) or RIZIV number (Dutch). This is your professional billing number — required for all patient billing within the Belgian health insurance system. Apply through your employer or directly via INAMI. This number is what allows your patients to be reimbursed for sessions.</div>
+          <div class="note note-be">Based on real experience: the full process from start (NARIC application) to receiving an INAMI number took approximately 9–10 months for one EU physiotherapist (US-trained) in 2021. For a non-EU Egyptian applicant, budget 12–18 months.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRACK 2 -->
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--be-dark)">Track 2 — Single Permit (Permis Unique / Gecombineerde Vergunning)</div>
+    <div class="note note-red" style="margin-bottom:1rem">⚠ <strong>Critical salary threshold issue:</strong> Belgium's Single Permit for highly qualified workers requires a minimum gross annual salary of €48,912 (Flanders, 2026 pending update) or €53,220 (Wallonia) or €3,703/month (Brussels). Entry-level physiotherapy salaries in Belgium typically start at €32,000–38,000 gross — <strong>below the highly-qualified threshold</strong>. This means most entry-level physio roles will NOT qualify for the highly-qualified Single Permit. However, Belgium also allows Single Permits under a standard labour market test route — this requires the employer to prove no suitable EU candidate was available. Healthcare shortage roles may benefit from an exemption or expedited labour market test.</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">1</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Employer submits Single Permit application to regional authority</div>
+          <div class="step-desc"><strong>Flanders:</strong> DWSE (Departement Werk en Sociale Economie) — online portal since 2024.<br><strong>Wallonia:</strong> SPW (Service Public de Wallonie) — online from 2025.<br><strong>Brussels:</strong> Actiris/Brupartners.<br>The employer is the applicant. Two sequential approvals needed: regional (labour market) + federal Immigration Office (residence). Total processing: typically 4–6 months.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">2</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Apply for Type D entry visa at Belgian consulate in Egypt</div>
+          <div class="step-desc">Once the Single Permit is approved, apply for a Type D long-stay visa (Visa D) at the Belgian consulate or embassy serving Egypt. Documents: Single Permit decision, employment contract, passport, health insurance proof, accommodation evidence, financial means. Fee: ~€180. Processing: 3–6 weeks typically.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">3</div><div class="step-connector"></div></div>
+        <div class="step-body">
+          <div class="step-title">Arrive and register with the commune — within 8 days</div>
+          <div class="step-desc">Register at your local commune's Aliens Department within 8 days of arrival. You will receive a professional residence card (A card for workers). This is required before you can register with the professional order, work in a hospital, or obtain your INAMI number. Open a Belgian bank account (BNP Paribas Fortis, KBC, ING, or Belfius are main options) and register with the CPAS (if applicable) for social services.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line"><div class="step-num dot-be">4</div></div>
+        <div class="step-body">
+          <div class="step-title">After 5 years — permanent residence</div>
+          <div class="step-desc">After 5 years of legal residence with continuous work permits, you can apply for an EU long-term residence permit, which gives you permanent right to live and work in Belgium and, with certain conditions, across the EU. Belgian citizenship requires a longer period and additional conditions.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BELGIUM EXPENSES -->
+  <div class="card">
+    <div style="font-size:15px;font-weight:600;margin-bottom:1rem;color:var(--be-dark)">Belgium — all costs</div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📄 Document preparation (in Egypt)</div>
+      <div class="exp-row"><div class="exp-name">Belgian consulate legalisation chain (same as Italy/France)<div class="sub">Egypt not in Hague Convention</div></div><div class="exp-amount">€80–180/doc set</div></div>
+      <div class="exp-row"><div class="exp-name">Sworn translation into Dutch or French<div class="sub">Certified translator; per page</div></div><div class="exp-amount">€10–20/page</div></div>
+      <div class="exp-row"><div class="exp-name">Police clearance + legalisation</div><div class="exp-amount">€30–60</div></div>
+      <div class="exp-row"><div class="exp-name">Courier / postage</div><div class="exp-amount">€40–80</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🏥 Track 1 — Recognition chain</div>
+      <div class="exp-row"><div class="exp-name">NARIC Vlaanderen equivalence fee (Flanders)<div class="sub">One-off academic equivalence assessment</div></div><div class="exp-amount">€90</div></div>
+      <div class="exp-row"><div class="exp-name">FWB equivalence fee (Wallonia/Brussels)</div><div class="exp-amount">€14–150</div></div>
+      <div class="exp-row"><div class="exp-name">Department of Care (Departement Zorg) recognition — no fee</div><div class="exp-amount">€0</div></div>
+      <div class="exp-row"><div class="exp-name">FPS Health visa (professional authorisation) — no fee</div><div class="exp-amount">€0</div></div>
+      <div class="exp-row"><div class="exp-name">Dutch language certificate (NT2 Staatsexamen — B2/C1)<div class="sub">For Flanders; exam + course if needed</div></div><div class="exp-amount">€100–400</div></div>
+      <div class="exp-row"><div class="exp-name">French language certificate (for Wallonia/Brussels)<div class="sub">DELF/DALF B2 minimum</div></div><div class="exp-amount">€100–300</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">📋 Track 2 — Single Permit & visa</div>
+      <div class="exp-row"><div class="exp-name">Single Permit application fee (employer-paid in most cases)<div class="sub">Varies by region: ~€200–400</div></div><div class="exp-amount">€200–400 (employer)</div></div>
+      <div class="exp-row"><div class="exp-name">Type D visa fee (Belgian consulate)</div><div class="exp-amount">~€180</div></div>
+      <div class="exp-row"><div class="exp-name">Consulate service fee / VFS</div><div class="exp-amount">€25–40</div></div>
+    </div>
+    <div class="exp-mb">
+      <div class="exp-section-title">🇧🇪 On arrival in Belgium</div>
+      <div class="exp-row"><div class="exp-name">Commune registration (carte de séjour / verblijfskaart)<div class="sub">Small admin fee</div></div><div class="exp-amount">€20–50</div></div>
+      <div class="exp-row"><div class="exp-name">Rental deposit (2 months standard in Belgium)<div class="sub">Brussels 1-bed: €1,100–2,200 deposit. Flanders: €900–1,800. Wallonia: €700–1,400.</div></div><div class="exp-amount">€700–2,200</div></div>
+      <div class="exp-row"><div class="exp-name">Temporary accommodation (2–3 weeks)</div><div class="exp-amount">€400–1,200</div></div>
+      <div class="exp-row"><div class="exp-name">Flight Cairo → Brussels (one-way)</div><div class="exp-amount">€200–500</div></div>
+      <div class="exp-row"><div class="exp-name">Mutuelle / ziekenfonds (mandatory health insurance fund)<div class="sub">Registration mandatory within 3 months; ~6 month waiting period for reimbursements</div></div><div class="exp-amount">~€10–15/mo</div></div>
+      <div class="exp-row"><div class="exp-name">Bank account setup, SIM, household basics</div><div class="exp-amount">€200–600</div></div>
+    </div>
+    <div class="total-block">
+      <div class="total-card min"><div class="total-label">Minimum (Wallonia, employer pays permit)</div><div class="total-sub">Before first salary</div><div class="total-num">~€3,000–4,500</div></div>
+      <div class="total-card real"><div class="total-label">Realistic (Brussels or Flanders, all costs)</div><div class="total-sub">Before first salary</div><div class="total-num">~€5,500–9,000</div></div>
+    </div>
+    <div class="note note-amber" style="margin-top:.75rem">⚠ <strong>6-month mutuelle waiting period:</strong> Most Belgian sickness funds have a 6-month waiting period before you are entitled to full reimbursements. During this time you pay full medical costs out of pocket. Budget €50–200/month for healthcare during the first 6 months and ask your employer about supplementary coverage.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: EGYPT DOCUMENTS (COMMON TO ALL)
+═══════════════════════════════════════════════════════ -->
+<section id="documents">
+  <div class="section-label">Common to all three countries</div>
+  <h2 class="section-title">Egypt document preparation — the critical foundation</h2>
+  <p class="section-desc">This step is common to Italy, France and Belgium and takes the longest. Egypt is NOT a member of the Hague Apostille Convention, which means every document needs a full consular legalisation chain — not just a simple apostille stamp.</p>
+
+  <div class="card">
+    <div class="note note-red" style="margin-bottom:1rem">⚠ <strong>No Apostille for Egyptian documents.</strong> The Hague Apostille Convention (allowing a single authentication stamp) does not apply to Egypt. Every document destined for Italy, France or Belgium must go through: <strong>1) Egyptian Notary</strong> → <strong>2) Egyptian Ministry of Foreign Affairs (MFA) stamp</strong> → <strong>3) The target country's embassy/consulate in Cairo legalises it.</strong> Allow 6–10 weeks and significant cost. Use a professional legalisation agent in Cairo if possible.</div>
+    <table class="t-table">
+      <thead><tr><th>Document</th><th>Who issues it</th><th>Est. cost + notes</th></tr></thead>
+      <tbody>
+        <tr><td>Degree certificate (notarised + legalised)</td><td>Your university → notary → MFA → consulate</td><td>€80–150 total chain per document</td></tr>
+        <tr><td>Full academic transcripts</td><td>University registrar (request in English + Arabic)</td><td>€30–80 for legalisation chain</td></tr>
+        <tr><td>Detailed course syllabus (subject by subject)</td><td>University academic department — request proactively</td><td>Time cost: 4–8 weeks. Notarisation: €30–60</td></tr>
+        <tr><td>Clinical placement logbook (hours per speciality)</td><td>University / hospital where placements were done</td><td>€30–60 for legalisation</td></tr>
+        <tr><td>Certificate of Good Standing</td><td>Egyptian Physiotherapy Syndicate (النقابة)</td><td>~€20–50. Confirm this body can issue for your graduation year</td></tr>
+        <tr><td>Police clearance certificate (criminal record)</td><td>Egyptian Ministry of Interior</td><td>€30–80 including legalisation. Allow 3–4 weeks.</td></tr>
+        <tr><td>Passport (notarised photocopy)</td><td>Notary public in Egypt</td><td>€20–40. Colour copies NOT accepted for Italy</td></tr>
+        <tr><td>Certified translation</td><td>Sworn translator certified by the target country's consulate OR tribunal in the target country</td><td>Italy: into Italian. France: into French. Belgium: into Dutch (Flanders) or French (Wallonia/Brussels). €10–25/page.</td></tr>
+        <tr><td>Language certificate</td><td>Alliance Française (French), Italian Cultural Institute (Italian), Goethe/NT2 centre (Dutch/Belgian)</td><td>Italy: B2 Italian. France: B2 French minimum. Belgium: B2–C1 Dutch or French. Exam fee: €100–300. Course: €200–1,500 in Egypt.</td></tr>
+      </tbody>
+    </table>
+    <div class="note note-blue" style="margin-top:.75rem">💡 <strong>Start with language.</strong> All three countries require the local language at B2+ level — and this takes the most time to acquire if you don't already have it. Start Italian, French, or Dutch lessons NOW, ideally while your documents are being prepared. An Egyptian physiotherapist with B2 French is in a much stronger position than one with none. Consider studying the language in Egypt before moving — it's cheaper and gives you time.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: LIVING COSTS
+═══════════════════════════════════════════════════════ -->
+<section id="living">
+  <div class="section-label">Monthly budget planning</div>
+  <h2 class="section-title">Cost of living comparison</h2>
+  <p class="section-desc">All three countries are significantly more affordable than Ireland, with France slightly ahead on rent outside Paris. Italy offers the best lifestyle-to-cost ratio, especially in mid-size cities.</p>
+
+  <div class="grid-3" style="margin-bottom:.75rem">
+    <!-- ITALY -->
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--it-dark)">🇮🇹 Italy (2026)</div>
+      <div class="cost-row"><div class="cost-label">1-bed, Milan/Rome centre<div class="sub">Most expensive cities</div></div><div class="cost-val" style="color:var(--red)">€1,400–2,200</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, Milan/Rome suburbs</div><div class="cost-val">€900–1,400</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, mid-size city (Bologna, Florence, Turin)</div><div class="cost-val">€700–1,100</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, south Italy (Naples, Palermo)</div><div class="cost-val">€450–700</div></div>
+      <div class="cost-row"><div class="cost-label">Groceries (cooking at home)</div><div class="cost-val">€200–300/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Public transport (monthly pass)</div><div class="cost-val">€35–70/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Utilities (electricity, gas, internet)</div><div class="cost-val">€150–220/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Eating out (occasional)</div><div class="cost-val">€15–30/meal</div></div>
+      <div class="divider"></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, north city)</div><div class="cost-val" style="font-size:14px;color:var(--it-dark)">€2,000–2,700/mo</div></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, mid-size city)</div><div class="cost-val" style="font-size:14px">€1,600–2,200/mo</div></div>
+    </div>
+    <!-- FRANCE -->
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--fr-dark)">🇫🇷 France (2026)</div>
+      <div class="cost-row"><div class="cost-label">1-bed, Paris centre<div class="sub">Extremely competitive market</div></div><div class="cost-val" style="color:var(--red)">€1,200–1,900+</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, Paris suburbs</div><div class="cost-val">€850–1,200</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, Lyon, Bordeaux, Marseille</div><div class="cost-val">€650–1,200</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, smaller cities & rural</div><div class="cost-val">€400–700</div></div>
+      <div class="cost-row"><div class="cost-label">Groceries (Lidl/Aldi/Carrefour)</div><div class="cost-val">€200–300/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Public transport (monthly pass)<div class="sub">Navigo Paris: €90.80/mo</div></div><div class="cost-val">€50–95/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Utilities</div><div class="cost-val">€100–180/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Mutuelle (health insurance supplement)</div><div class="cost-val">€30–80/mo</div></div>
+      <div class="divider"></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, Paris)</div><div class="cost-val" style="font-size:14px;color:var(--fr-dark)">€2,500–4,000/mo</div></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, provinces)</div><div class="cost-val" style="font-size:14px">€1,500–2,200/mo</div></div>
+    </div>
+    <!-- BELGIUM -->
+    <div class="card">
+      <div style="font-size:14px;font-weight:600;margin-bottom:.75rem;color:var(--be-dark)">🇧🇪 Belgium (2026)</div>
+      <div class="cost-row"><div class="cost-label">1-bed, Brussels centre</div><div class="cost-val" style="color:var(--red)">€1,000–1,500</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, Flanders (Antwerp, Ghent)</div><div class="cost-val">€800–1,200</div></div>
+      <div class="cost-row"><div class="cost-label">1-bed, Wallonia (Liège, Namur, Charleroi)<div class="sub">Most affordable region</div></div><div class="cost-val">€550–850</div></div>
+      <div class="cost-row"><div class="cost-label">Groceries</div><div class="cost-val">€200–320/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Public transport (STIB/De Lijn monthly pass)</div><div class="cost-val">€50–65/mo</div></div>
+      <div class="cost-row"><div class="cost-label">Utilities (electricity, gas, internet)</div><div class="cost-val">€200–280/mo<br><span style="font-size:11px;color:var(--text3)">Belgium has high energy costs</span></div></div>
+      <div class="cost-row"><div class="cost-label">Ziekenfonds/Mutuelle monthly contribution</div><div class="cost-val">€10–20/mo</div></div>
+      <div class="divider"></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, Brussels)</div><div class="cost-val" style="font-size:14px;color:var(--be-dark)">€2,000–2,700/mo</div></div>
+      <div class="cost-row"><div class="cost-label" style="font-weight:600">Total (1 person, Wallonia)</div><div class="cost-val" style="font-size:14px">€1,500–2,000/mo</div></div>
+    </div>
+  </div>
+
+  <div class="note note-blue">💡 <strong>The best value combination:</strong> France (provinces/rural areas — especially underserved southern France or rural Bretagne) offers the lowest total living costs, plus France has the CAF (Caisse d'Allocations Familiales) housing benefit scheme that can offset rent by €100–400/month if you qualify. Rural areas also have shortage of physiotherapists making it easier to find work. The downside is the very hard non-EU recognition process.</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: SALARIES
+═══════════════════════════════════════════════════════ -->
+<section id="salaries">
+  <div class="section-label">What you'll earn</div>
+  <h2 class="section-title">Physiotherapist salaries across the three countries</h2>
+  <p class="section-desc">Salaries in these three countries are lower than Ireland or the UK but the combination of lower living costs and strong social benefits (healthcare, transport subsidies, holiday entitlement) makes them competitive in quality of life terms.</p>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div class="comp-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr><th>Level</th><th class="th-it">🇮🇹 Italy (gross/yr)</th><th class="th-fr">🇫🇷 France (gross/yr)</th><th class="th-be">🇧🇪 Belgium (gross/yr)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Entry level (0–3 yrs)</td><td>€25,000–35,000</td><td>€27,000–32,000</td><td>€32,000–40,000</td></tr>
+          <tr><td>Mid-career (3–8 yrs)</td><td>€32,000–50,000</td><td>€32,000–42,000</td><td>€40,000–52,000</td></tr>
+          <tr><td>Senior / specialist (8+ yrs)</td><td>€50,000–65,000</td><td>€42,000–55,000</td><td>€52,000–65,000</td></tr>
+          <tr><td>Public sector entry scale</td><td>~€25,000–30,000 (SSN CCNL)</td><td>~€27,000–30,000 (FPH grille)</td><td>~€32,000–38,000 (IFIC barema)</td></tr>
+          <tr><td>Private sector range</td><td>€28,000–65,000</td><td>€28,000–55,000</td><td>€35,000–65,000</td></tr>
+          <tr class="warn-row"><td>Single Permit minimum salary (highly skilled)</td><td>CCNL sector minimum (~€22–28k pub.)</td><td>SMIC (~€21,200/yr gross 2026)</td><td>€48,912–53,220/yr (highly skilled)</td></tr>
+          <tr><td>Approx. net monthly take-home (entry)</td><td>~€1,600–1,900/mo</td><td>~€1,800–2,200/mo</td><td>~€1,900–2,400/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note note-amber" style="margin-top:.75rem">⚠ <strong>Belgium salary gap:</strong> Entry-level Belgian physiotherapy salaries (€32,000–38,000) typically fall below the highly-qualified Single Permit threshold (€48,912 in Flanders). This is the main immigration challenge for Belgium. Solutions: (1) Look for senior roles with higher salaries; (2) Apply via the standard Single Permit route (labour market test, not highly-qualified threshold); (3) Target Brussels/Wallonia where the threshold may be more flexible for healthcare shortage roles. Always verify current thresholds with an immigration lawyer.</div>
+    <div class="note note-it" style="margin-top:.5rem">ℹ️ <strong>Italy public sector (SSN):</strong> Under the CCNL healthcare national collective agreement, a physiotherapist starting in the Italian public health service earns approximately €22,000–28,000 gross — Italy has some of the lowest physiotherapy salaries in Western Europe for public sector. Private practice and specialist centres pay more (€35,000–65,000+) but require additional entrepreneurial setup.</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SECTION: CHECKLIST
+═══════════════════════════════════════════════════════ -->
+<section id="checklist">
+  <div class="section-label">Action plan</div>
+  <h2 class="section-title">Universal checklist — start here regardless of country</h2>
+  <p class="section-desc">These steps apply whichever country you choose and should be started immediately, in parallel.</p>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem">🗂 Phase 1 — Do now, from Egypt (months 0–3)</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">1.</span><span><strong>Choose your target country and language.</strong> The language requirement is non-negotiable. If you already speak French (common in educated Egyptian families), France or Belgium (Wallonia/Brussels) becomes more accessible. If you are starting from zero, Italian or French are easier for Arabic speakers than Dutch.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">2.</span><span><strong>Start language lessons immediately.</strong> Enrol in Italian/French/Dutch classes in Egypt — Alliance Française Cairo, Italian Cultural Institute Cairo, or certified online programmes. You need B2 at minimum, C1 is better. This takes 12–18 months of study even with talent.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">3.</span><span><strong>Request your university documents immediately.</strong> Full transcripts in English + Arabic, subject-by-subject syllabus, clinical placement records (hours per speciality). These can take 4–8 weeks from Egyptian universities.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">4.</span><span><strong>Obtain Certificate of Good Standing</strong> from the Egyptian Physiotherapy Syndicate and a police clearance certificate from the Ministry of Interior.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">5.</span><span><strong>Begin the Egyptian consular legalisation chain</strong> for each document: Egyptian notary → Ministry of Foreign Affairs → target country's consulate/embassy in Cairo. Allow 6–10 weeks per batch and budget €150–300 per document set.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--green);font-weight:700;min-width:22px">6.</span><span><strong>Commission certified translations</strong> into the target language from a sworn translator accredited by the target country's consulate. Italy: into Italian. France/Belgium-Wallonia: into French. Belgium-Flanders: into Dutch.</span></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:.75rem">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem">🗂 Phase 2 — Recognition applications (months 3–18+)</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--blue);font-weight:700;min-width:22px">7.</span><span><strong>Italy:</strong> Submit dossier by registered post to DGPROF Rome (form D2-26). <strong>France:</strong> Contact target region DREETS and submit online or by post. <strong>Belgium:</strong> Apply to NARIC (Flanders) or FWB (Wallonia) for academic equivalence first, then Departement Zorg / DGO Santé.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--blue);font-weight:700;min-width:22px">8.</span><span><strong>Start job hunting in parallel</strong> — do not wait for recognition to finish. Build a profile on LinkedIn (set location to your target country), contact hospitals and clinics directly, use local job boards (indeed.it, jobs.be, poleemploi.fr). In all three countries, physiotherapy shortages exist especially in rural areas and geriatric/elderly care settings.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--blue);font-weight:700;min-width:22px">9.</span><span><strong>Pass the language exam</strong> (CELI/CILS for Italian, DELF/TCF for French, NT2 for Dutch) ideally before your recognition is complete — so there is no extra delay after the decree/decision arrives.</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:14px;font-weight:600;margin-bottom:1rem">🗂 Phase 3 — Permit, visa & arrival (months 12–24)</div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;min-width:22px">10.</span><span>Once a job offer is confirmed, employer applies for the relevant work authorisation: Italy (Nulla Osta via SUI/Decreto Flussi), France (Autorisation de Travail via DREETS), Belgium (Single Permit via regional authority).</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;min-width:22px">11.</span><span>Apply for the entry visa at the consulate in Cairo: Italy (Type D — lavoro subordinato), France (VLS-TS salarié), Belgium (Type D long-stay).</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;min-width:22px">12.</span><span>Save your relocation fund. Recommended minimum before first salary: Italy €5,000–8,000 / France €4,000–7,000 / Belgium €5,000–8,000.</span></div>
+      <div style="display:flex;gap:10px;font-size:13px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;min-width:22px">13.</span><span>On arrival: within 8 days register at commune/municipality, sign any required employment contract supplements, begin residence permit or Permesso di Soggiorno / Titre de Séjour / Verblijfskaart process.</span></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /main -->
+
+<footer>
+  <p style="color:rgba(240,237,230,.7);margin-bottom:.4rem">Egypt → Europe · Physiotherapist relocation guide · Italy · France · Belgium · Compiled June 2026</p>
+  <p>Sources: <a href="https://www.salute.gov.it" target="_blank">salute.gov.it</a> · <a href="https://www.fisiofrance.com" target="_blank">fisiofrance.com</a> · <a href="https://www.vlaanderen.be" target="_blank">vlaanderen.be</a> · <a href="https://www.departementzorg.be" target="_blank">departementzorg.be</a> · <a href="https://italylawfirms.com" target="_blank">italylawfirms.com</a> · <a href="https://www.milo-kine.fr" target="_blank">milo-kine.fr</a> · KPMG GMS Flash Alert 2026-018 · Numbeo 2026 · Expatica 2026</p>
+  <p style="margin-top:.5rem">All figures are estimates. Verify current fees, salary scales, visa requirements and quotas with official sources before making decisions. This guide is informational only and does not constitute legal, immigration, or financial advice. Salary thresholds, permit quotas and recognition procedures change regularly — confirm with the relevant authority before acting.</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      navLinks.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.nav a[href="#${e.target.id}"]`);
+      if(a){ a.classList.add('active'); a.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'}); }
+    }
+  });
+}, {threshold:0.25, rootMargin:'-60px 0px -60% 0px'});
+sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
